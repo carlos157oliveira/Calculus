@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Calculus
+Exec=calculus
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
+Icon=integral

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <template class="PlotWindow" parent="GtkApplicationWindow">
+    <property name="modal">True</property>
+    <property name="title">Gráficos</property>
+    <property name="default_width">400</property>
+    <property name="default_height">300</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkGrid">
+
+        <property name="visible">True</property>
+        <property name="row_spacing">20</property>
+        <property name="column_spacing">20</property>
+        <property name="margin">30</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label">Limite inferior intervalo</property>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="liminfEntry">
+            <property name="visible">True</property>
+            <property name="text">-10</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label">Limite superior intervalo</property>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="limsupEntry">
+            <property name="visible">True</property>
+            <property name="text">10</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label">Cor 1</property>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkColorButton" id="colorButton1">
+            <property name="visible">True</property>
+            <property name="rgba">rgb(255,0,0)</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label">Cor 2</property>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkColorButton" id="colorButton2">
+            <property name="visible">True</property>
+            <property name="rgba">rgb(0,0,255)</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="cancelButton">
+            <property name="visible">True</property>
+            <property name="label">Cancelar</property>
+            <signal name="clicked" handler="cancel_plot"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="plotButton">
+            <property name="visible">True</property>
+            <property name="label">Plotar</property>
+            <signal name="clicked" handler="plot"/>
+            <style>
+              <class name="suggested-action"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">4</property>
+          </packing>
+        </child>
+
+      </object>
+    </child>
+
+  </template>
+
+</interface>
