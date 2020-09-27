@@ -28,10 +28,10 @@ from .ui.window import CalculusWindow
 class Application(Gtk.Application):
 
     def __init__(self):
-        super().__init__(application_id='org.example.App',
+        super().__init__(application_id='com.github.carlos157oliveira.Calculus',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
 
-        base_path = '/org/example/App'
+        base_path = '/com/github/carlos157oliveira/Calculus'
 
         self.props.resource_base_path = base_path
 

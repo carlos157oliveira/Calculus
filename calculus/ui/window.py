@@ -24,7 +24,7 @@ from .plot_window import PlotWindow
 
 import threading
 
-@Gtk.Template(resource_path='/org/example/App/ui/window.ui')
+@Gtk.Template(resource_path='/com/github/carlos157oliveira/Calculus/ui/window.ui')
 class CalculusWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'CalculusWindow'
 

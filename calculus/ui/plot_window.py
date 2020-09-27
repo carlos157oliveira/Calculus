@@ -21,7 +21,7 @@ from ..utils.dialogs import warning_dialog
 from ..utils.plots import Plots
 
 
-@Gtk.Template(resource_path='/org/example/App/ui/plot_window.ui')
+@Gtk.Template(resource_path='/com/github/carlos157oliveira/Calculus/ui/plot_window.ui')
 class PlotWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'PlotWindow'
 

@@ -7,9 +7,9 @@ input: configure_file(
     configuration: desktop_conf)
 '''
 desktop_file = i18n.merge_file(
-  input: 'org.example.App.desktop.in',
+  input: PROJECT_RDNN_NAME + '.desktop.in',
   #configuration: desktop_conf,
-  output: 'org.example.App.desktop',
+  output: PROJECT_RDNN_NAME + '.desktop',
   type: 'desktop',
   po_dir: join_paths(meson.source_root(), 'po'),
   install: true,
@@ -24,8 +24,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'org.example.App.appdata.xml.in',
-  output: 'org.example.App.appdata.xml',
+  input: PROJECT_RDNN_NAME + '.appdata.xml.in',
+  output: PROJECT_RDNN_NAME + '.appdata.xml',
   po_dir: '../po',
   install: true,
   install_dir: join_paths(get_option('datadir'), 'appdata')
@@ -39,7 +39,7 @@ if appstream_util.found()
   )
 endif
 
-install_data('org.example.App.gschema.xml',
+install_data(PROJECT_RDNN_NAME + '.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 
@@ -62,7 +62,7 @@ gnome.compile_resources('calculus',
 # Installing the default icon
 icon_dir = 'icons/hicolor/48x48/apps'
 install_data(
-    join_paths(icon_dir, 'integral.png'),
+    join_paths(icon_dir, 'com.github.carlos157oliveira.Calculus.png'),
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), icon_dir)
 )
 

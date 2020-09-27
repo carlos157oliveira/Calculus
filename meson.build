@@ -8,8 +8,8 @@ project('calculus',
 i18n = import('i18n')
 
 
-APPLICATION_ID = 'org.example.App'
-PROJECT_RDNN_NAME = 'org.example.App'
+APPLICATION_ID = 'com.github.carlos157oliveira.Calculus'
+PROJECT_RDNN_NAME = 'com.github.carlos157oliveira.Calculus'
 PKGDATA_DIR = join_paths(get_option('prefix'), get_option('datadir'), APPLICATION_ID)
 
 #dependency('latex-base')
