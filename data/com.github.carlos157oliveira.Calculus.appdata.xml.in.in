@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
-	<id>@app_id@.desktop</id>
+<component type="desktop-application">
+	<id>@app_id@</id>
+  <name>Calculus</name>
   <translation type="gettext">@app_id@</translation>
+  <launchable type="desktop-id">@app_id@.desktop</launchable>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
+  <summary>Compute derivatives and integrals</summary>
 	<description>
+	  <ul>
+	    <li>Compute derivatives</li>
+	    <li>Compute integrals</li>
+	    <li>Plot the original expression and result within a given range</li>
+	  </ul>
 	</description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/carlos157oliveira/Calculus/master/data/screenshots/calculus-1.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/carlos157oliveira/Calculus/master/data/screenshots/calculus-2.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/carlos157oliveira/Calculus/master/data/screenshots/calculus-3.png</image>
+    </screenshot>
+  </screenshots>
 </component>
