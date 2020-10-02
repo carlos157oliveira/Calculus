@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-18 20:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: calculus/ui/window.py
+
+msgid "No input data"
+msgstr "Sem dados de entrada"
+
+msgid "Expressions must be univariable"
+msgstr "As expressões devem ser univariável"
+
+msgid "Input operand"
+msgstr "Preencha o operando"
+
+msgid "Input operation variable"
+msgstr "Preencha a variável da operação"
+
+msgid "Syntax error"
+msgstr "Error de sintaxe"
+
+#: data/ui/window.ui
+
+msgid "Differential and Integral Calculator"
+msgstr "Calculadora Diferencial e Integral"
+
+msgid "Result:"
+msgstr "Resultado:"
+
+msgid "Operation variable:"
+msgstr "Variável da operação:"
+
+msgid "Differentiate"
+msgstr "Diferenciar"
+
+msgid "Integrate"
+msgstr "Integrar"
+
+msgid "Operate"
+msgstr "Operar"
+
+#: data/ui/window.ui data/ui/plot_window.ui
+msgid "Plot"
+msgstr "Plotar"
+
+#: data/ui/plot_window.ui
+
+msgid "Graphics"
+msgstr "Gráficos"
+
+msgid "Inferior limit"
+msgstr "Limite inferior intervalo"
+
+msgid "Superior limit"
+msgstr "Limite superior intervalo"
+
+msgid "Color 1"
+msgstr "Cor 1"
+
+msgid "Color 2"
+msgstr "Cor 2"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: calculus/ui/plot_window.py
+
+msgid "The interval must be numeric"
+msgstr "O intervalo deve ser numérico"
+
+msgid "Original Expression and Result"
+msgstr "Expressão Original e Resultado"
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Result"
+msgstr "Resultado"
+
+msgid "One or more symbols aren't defined"
+msgstr "Um ou mais símbolos não são definidos"
+
+

@@ -8,7 +8,7 @@
       <object class="GtkHeaderBar" id="header_bar">
         <property name="visible">True</property>
         <property name="show-close-button">True</property>
-        <property name="title">Calculadora Diferencial e Integral</property>
+        <property name="title" translatable="yes">Differential and Integral Calculator</property>
       </object>
     </child>
     <child>
@@ -22,7 +22,7 @@
         <child>
           <object class="GtkLabel" id="result">
             <property name="visible">True</property>
-            <property name="label">Resultado:</property>
+            <property name="label" translatable="yes">Result:</property>
             <attributes>
               <attribute name="weight" value="bold"/>
             </attributes>
@@ -46,7 +46,7 @@
             <property name="spacing">10</property>
             <child>
               <object class="GtkLabel">
-                <property name="label">Variável da operação:</property>
+                <property name="label" translatable="yes">Operation variable:</property>
                 <property name="visible">True</property>
               </object>
             </child>
@@ -64,14 +64,14 @@
           <property name="visible">True</property>
           <child>
             <object class="GtkRadioButton" id="togDiff">
-              <property name="label">Diferenciar</property>
+              <property name="label" translatable="yes">Differentiate</property>
               <property name="visible">True</property>
               <property name="group">togDiff</property>
             </object>
           </child>
           <child>
             <object class="GtkRadioButton" id="togInt">
-              <property name="label">Integrar</property>
+              <property name="label" translatable="yes">Integrate</property>
               <property name="visible">True</property>
               <property name="group">togDiff</property>
             </object>
@@ -86,7 +86,7 @@
             <property name="spacing">15</property>
             <child>
               <object class="GtkButton" id="operateButton">
-                <property name="label">Operar</property>
+                <property name="label" translatable="yes">Operate</property>
                 <property name="visible">True</property>
                 <signal name="clicked" handler="operate"/>
                 <style>
@@ -101,7 +101,7 @@
             </child>
             <child>
               <object class="GtkButton" id="plotButton">
-                <property name="label">Plotar</property>
+                <property name="label" translatable="yes">Plot</property>
                 <property name="visible">True</property>
                 <signal name="clicked" handler="invoke_plot_dialog"/>
               </object>

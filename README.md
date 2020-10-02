@@ -1,4 +1,4 @@
-# ![Calculus Logo](https://raw.githubusercontent.com/carlos157oliveira/Calculus/master/data/icons/hicolor/48x48/apps/com.github.carlos157oliveira.Calculus.png) Calculus
+# ![Calculus Logo](https://raw.githubusercontent.com/carlos157oliveira/Calculus/master/data/icons/hicolor/scalable/apps/com.github.carlos157oliveira.Calculus.svg) Calculus
 Application to compute derivatives and integrals and plot the results
 
 ## Motivation

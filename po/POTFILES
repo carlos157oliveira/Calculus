@@ -1,7 +1,8 @@
 data/org.example.App.desktop.in
 data/org.example.App.appdata.xml.in
 data/org.example.App.gschema.xml
-src/window.ui
-src/main.py
-src/window.py
-
+data/ui/window.ui
+data/ui/plot_window.ui
+calculus/main.py
+calculus/ui/window.py
+calculus/ui/plot_window.py

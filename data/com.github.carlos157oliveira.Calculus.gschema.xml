@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="calculus">
+<schemalist gettext-domain="com.github.carlos157oliveira.Calculus">
 	<schema id="com.github.carlos157oliveira.Calculus" path="/com/github/carlos157oliveira/Calculus/">
 	</schema>
 </schemalist>

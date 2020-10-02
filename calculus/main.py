@@ -23,12 +23,14 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, Gio, Gdk
 
 from .ui.window import CalculusWindow
+import gettext
 
 
 class Application(Gtk.Application):
 
     def __init__(self):
-        super().__init__(application_id='com.github.carlos157oliveira.Calculus',
+        app_id = 'com.github.carlos157oliveira.Calculus'
+        super().__init__(application_id=app_id,
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
 
         base_path = '/com/github/carlos157oliveira/Calculus'
@@ -40,6 +42,7 @@ class Application(Gtk.Application):
         screen = Gdk.Screen.get_default()
         style_context = Gtk.StyleContext()
         style_context.add_provider_for_screen(screen, css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+
 
     def do_activate(self):
         win = self.props.active_window

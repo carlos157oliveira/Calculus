@@ -30,7 +30,7 @@
                 ]
             },
             "build-commands" : [
-                "pip3 install --prefix=/app sympy"
+                "pip3 install --prefix=/app --no-cache-dir sympy"
             ]
         },
         {
@@ -42,7 +42,7 @@
                 ]
             },
             "build-commands" : [
-                "pip3 install --prefix=/app matplotlib"
+                "pip3 install --prefix=/app --no-cache-dir matplotlib"
             ]
         },
         {
@@ -52,9 +52,14 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/carlos157oliveira/Calculus.git"
+                    "url" : "file:///home/ceo/Documents/Calculus"
                 }
             ]
         }
-    ]
+    ],
+    "build-options" : {
+        "env" : {
+            "LANG" : "pt_BR"
+        }
+    }
 }

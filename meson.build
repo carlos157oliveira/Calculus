@@ -19,19 +19,26 @@ pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.proje
 
 subdir('data')
 
-#moduledir = join_paths(pkgdatadir, 'calculus')
-
 
 python = import('python')
 py_installation = python.find_installation('python3')
 
-
+#bin_config.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
 conf = configuration_data()
+conf.set('application_id', APPLICATION_ID)
 conf.set('PYTHON', py_installation.path())
 conf.set('VERSION', meson.project_version())
-conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
+#conf.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), get_option('localedir')))
+# get_option('localedir') == 'share/locale'
+# 'share/locale" redundante
+conf.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
 conf.set('pkgdatadir', pkgdatadir)
 
+message('bababa')
+message(get_option('prefix'))
+message(get_option('datadir'))
+message(get_option('localedir'))
+message(join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
 
 configure_file(
   input: 'calculus.in',
@@ -40,19 +47,7 @@ configure_file(
   install: true,
   install_dir: get_option('bindir'),
 )
-'''
-calculus_sources = [
-  '__init__.py',
-  'main.py',
-  'window.py',
-  'utils/dialogs.py'
-]
 
-install_data(
-	calculus_sources,
-	install_dir: moduledir
-)
-'''
 
 install_subdir('calculus', install_dir: pkgdatadir)
 

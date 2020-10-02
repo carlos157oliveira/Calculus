@@ -3,7 +3,7 @@
   <requires lib="gtk+" version="3.20"/>
   <template class="PlotWindow" parent="GtkApplicationWindow">
     <property name="modal">True</property>
-    <property name="title">Gráficos</property>
+    <property name="title" translatable="yes">Graphics</property>
     <property name="default_width">400</property>
     <property name="default_height">300</property>
     <child type="titlebar">
@@ -20,7 +20,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label">Limite inferior intervalo</property>
+            <property name="label" translatable="yes">Inferior limit</property>
           </object>
           <packing>
             <property name="left_attach">0</property>
@@ -41,7 +41,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label">Limite superior intervalo</property>
+            <property name="label" translatable="yes">Superior limit</property>
           </object>
           <packing>
             <property name="left_attach">0</property>
@@ -62,7 +62,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label">Cor 1</property>
+            <property name="label" translatable="yes">Color 1</property>
           </object>
           <packing>
             <property name="left_attach">0</property>
@@ -84,7 +84,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label">Cor 2</property>
+            <property name="label" translatable="yes">Color 2</property>
           </object>
           <packing>
             <property name="left_attach">0</property>
@@ -105,7 +105,7 @@
         <child>
           <object class="GtkButton" id="cancelButton">
             <property name="visible">True</property>
-            <property name="label">Cancelar</property>
+            <property name="label" translatable="yes">Cancel</property>
             <signal name="clicked" handler="cancel_plot"/>
           </object>
           <packing>
@@ -116,7 +116,7 @@
         <child>
           <object class="GtkButton" id="plotButton">
             <property name="visible">True</property>
-            <property name="label">Plotar</property>
+            <property name="label" translatable="yes">Plot</property>
             <signal name="clicked" handler="plot"/>
             <style>
               <class name="suggested-action"/>
