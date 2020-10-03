@@ -1,8 +1,8 @@
-data/org.example.App.desktop.in
-data/org.example.App.appdata.xml.in
-data/org.example.App.gschema.xml
-data/ui/window.ui
-data/ui/plot_window.ui
 calculus/main.py
-calculus/ui/window.py
 calculus/ui/plot_window.py
+calculus/ui/window.py
+data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in
+data/com.github.carlos157oliveira.Calculus.desktop.in.in
+data/com.github.carlos157oliveira.Calculus.gschema.xml
+data/ui/plot_window.ui
+data/ui/window.ui

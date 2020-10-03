@@ -52,8 +52,7 @@ msgstr "Operar"
 msgid "Plot"
 msgstr "Plotar"
 
-#: data/ui/plot_window.ui
-
+#: data/ui/plot_window.ui:6
 msgid "Graphics"
 msgstr "Gráficos"
 

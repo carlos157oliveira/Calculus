@@ -15,9 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, GLib, GObject
-#from gettext import gettext as _
-#import gettext
+from gi.repository import Gtk, GLib
 
 from ..utils.dialogs import warning_dialog
 from ..utils.plots import Plots

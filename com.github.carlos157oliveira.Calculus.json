@@ -30,7 +30,7 @@
                 ]
             },
             "build-commands" : [
-                "pip3 install --prefix=/app sympy"
+                "pip3 install --prefix=/app sympy==1.6.2"
             ]
         },
         {
@@ -42,7 +42,7 @@
                 ]
             },
             "build-commands" : [
-                "pip3 install --prefix=/app matplotlib"
+                "pip3 install --prefix=/app matplotlib==3.3.2"
             ]
         },
         {

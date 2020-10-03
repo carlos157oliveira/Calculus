@@ -1,11 +1,5 @@
 desktop_conf = configuration_data()
 desktop_conf.set('app_id', APPLICATION_ID)
-'''
-input: configure_file(
-    output: PROJECT_RDNN_NAME + '.desktop.in',
-    input: PROJECT_RDNN_NAME + '.desktop.in.in',
-    configuration: desktop_conf)
-'''
 
 desktop_file_in = configure_file(
   input: PROJECT_RDNN_NAME + '.desktop.in.in',
@@ -14,7 +8,6 @@ desktop_file_in = configure_file(
 )
 
 desktop_file = i18n.merge_file(
-  #input: PROJECT_RDNN_NAME + '.desktop.in',
   input: desktop_file_in,
   output: PROJECT_RDNN_NAME + '.desktop',
   type: 'desktop',
@@ -69,11 +62,12 @@ endif
 
 gnome = import('gnome')
 
-gnome.compile_resources('calculus',
-  'calculus.gresource.xml',
+gnome.compile_resources(PROJECT_RDNN_NAME,
+  PROJECT_RDNN_NAME + '.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
+  source_dir: meson.current_build_dir()
 )
 
 # Installing the default icon

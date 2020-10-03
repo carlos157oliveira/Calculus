@@ -30,20 +30,27 @@ localedir = '@localedir@'
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-locale.bindtextdomain('@application_id@', localedir)
-locale.textdomain('@application_id@')
 
-gettext.bindtextdomain('@application_id@', localedir)
-gettext.textdomain('@application_id@')
 
-gettext.install('calculus', localedir)
+#locale.setlocale(locale.LC_ALL, '')
+
 
 if __name__ == '__main__':
+
+    locale.bindtextdomain('@app_id@', localedir)
+    locale.textdomain('@app_id@')
+    #gettext.bindtextdomain('@app_id@', localedir)
+    #gettext.textdomain('@app_id@')
+    gettext.install('@app_id@', localedir)
+
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'calculus.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, '@rdnn_name@' + '.gresource'))
     resource._register()
+
+    #gettext.install('calculus', localedir)
+    #locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
     from calculus import main
     sys.exit(main.main(VERSION))

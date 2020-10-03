@@ -25,20 +25,17 @@ py_installation = python.find_installation('python3')
 
 #bin_config.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
 conf = configuration_data()
-conf.set('application_id', APPLICATION_ID)
+conf.set('app_id', APPLICATION_ID)
 conf.set('PYTHON', py_installation.path())
 conf.set('VERSION', meson.project_version())
 #conf.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), get_option('localedir')))
 # get_option('localedir') == 'share/locale'
 # 'share/locale" redundante
+conf.set('rdnn_name', PROJECT_RDNN_NAME)
 conf.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
+#conf.set('localedir', get_option('localedir'))
 conf.set('pkgdatadir', pkgdatadir)
 
-message('bababa')
-message(get_option('prefix'))
-message(get_option('datadir'))
-message(get_option('localedir'))
-message(join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
 
 configure_file(
   input: 'calculus.in',
