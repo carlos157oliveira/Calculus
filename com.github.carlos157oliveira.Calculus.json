@@ -52,7 +52,9 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/carlos157oliveira/Calculus.git"
+                    "url" : "https://github.com/carlos157oliveira/Calculus.git",
+                    "tag": "",
+                    "commit": ""
                 }
             ]
         }
