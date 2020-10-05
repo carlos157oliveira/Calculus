@@ -21,30 +21,7 @@
         "*.a"
     ],
     "modules" : [
-        {
-            "name" : "sympy",
-            "buildsystem" : "simple",
-            "build-options" : {
-                "build-args" : [
-                    "--share=network"
-                ]
-            },
-            "build-commands" : [
-                "pip3 install --prefix=/app sympy==1.6.2"
-            ]
-        },
-        {
-            "name" : "matplotlib",
-            "buildsystem" : "simple",
-            "build-options" : {
-                "build-args" : [
-                    "--share=network"
-                ]
-            },
-            "build-commands" : [
-                "pip3 install --prefix=/app matplotlib==3.3.2"
-            ]
-        },
+	"python3-requirements.json",
         {
             "name" : "calculus",
             "builddir" : true,
