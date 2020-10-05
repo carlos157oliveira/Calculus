@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
 	<id>@app_id@</id>
-  <name>Calculus</name>
   <translation type="gettext">@app_id@</translation>
   <launchable type="desktop-id">@app_id@.desktop</launchable>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
+  <content_rating type="oars-1.1" />
   <url type="homepage">https://github.com/carlos157oliveira/Calculus</url>
-  <url type="contact">carlos157oliveira@gmail.com</url>
+  <name>Calculus</name>
   <summary>Compute derivatives and integrals</summary>
 	<description>
+	  <p>A practical tool to foresee the result calculus exercises.</p>
 	  <ul>
 	    <li>Compute derivatives</li>
 	    <li>Compute integrals</li>
@@ -30,7 +31,9 @@
   <releases>
     <release version="1.0.0" date="2020-10-05">
       <description>
+        <p>
           First stable release for Calculus.
+        </p>
       </description>
     </release>
   </releases>
