@@ -25,6 +25,8 @@ endif
 
 app_data = configuration_data()
 app_data.set('app_id', APPLICATION_ID)
+app_data.set('package_url', PACKAGE_URL)
+app_data.set('package_url_bug', PACKAGE_URL_BUG)
 
 app_data_in = configure_file(
   input: PROJECT_RDNN_NAME + '.appdata.xml.in.in',
