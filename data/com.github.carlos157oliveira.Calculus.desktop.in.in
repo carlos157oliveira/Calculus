@@ -1,8 +1,9 @@
 [Desktop Entry]
 Name=Calculus
+Comment=Compute derivatives and integrals, besides plotting them
 Exec=calculus
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=GTK;Education;Science;Graphics;Math;
 StartupNotify=true
 Icon=@app_id@

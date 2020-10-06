@@ -7,33 +7,26 @@ project('calculus',
 
 i18n = import('i18n')
 
-
 APPLICATION_ID = 'com.github.carlos157oliveira.Calculus'
 PROJECT_RDNN_NAME = 'com.github.carlos157oliveira.Calculus'
 PKGDATA_DIR = join_paths(get_option('prefix'), get_option('datadir'), APPLICATION_ID)
+PACKAGE_URL = 'https://github.com/carlos157oliveira/Calculus'
+PACKAGE_URL_BUG = 'https://github.com/carlos157oliveira/Calculus/issues'
 
-#dependency('latex-base')
-
-
+# dependency('latex-base')
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 
 subdir('data')
 
-
 python = import('python')
 py_installation = python.find_installation('python3')
 
-#bin_config.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
 conf = configuration_data()
 conf.set('app_id', APPLICATION_ID)
 conf.set('PYTHON', py_installation.path())
 conf.set('VERSION', meson.project_version())
-#conf.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), get_option('localedir')))
-# get_option('localedir') == 'share/locale'
-# 'share/locale" redundante
 conf.set('rdnn_name', PROJECT_RDNN_NAME)
 conf.set('localedir', join_paths(get_option('prefix'), get_option('datadir'), 'locale'))
-#conf.set('localedir', get_option('localedir'))
 conf.set('pkgdatadir', pkgdatadir)
 
 

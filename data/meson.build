@@ -33,7 +33,6 @@ app_data_in = configure_file(
 )
 
 appstream_file = i18n.merge_file(
-  #input: PROJECT_RDNN_NAME + '.appdata.xml.in',
   input: app_data_in,
   output: PROJECT_RDNN_NAME + '.appdata.xml',
   po_dir: '../po',
@@ -79,5 +78,3 @@ install_data(
 
 # prefix /app /icons/hicolor/scalable/apps
 # datadir /app/share /icons/hicolor/scalable/apps
-
-

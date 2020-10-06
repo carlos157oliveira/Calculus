@@ -48,9 +48,11 @@ class CalculusWindow(Gtk.ApplicationWindow):
         self.sympy_handler = SympyHandler()
 
         # getting the style right so the plot of the math formula can be shown accordingly to the theme
-        style = Gtk.StyleContext()
+        style = self.get_style_context()
         c = style.lookup_color('fg_color')[1]
-        self.resultColor = (c.red, c.green, c.blue, c.alpha)
+
+        # we lock alpha to be equal 1 all the time: we want maximum opacity
+        self.resultColor = (c.red, c.green, c.blue, 1)
 
 
     def spinner(original_function):
