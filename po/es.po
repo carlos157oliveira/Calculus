@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-18 20:44+0200\n"
-"PO-Revision-Date: 2020-10-06 21:07+0200\n"
-"Last-Translator: ALBANO BATTISTELLA <albano_battistella@hotmail.com>\n"
-"Language-Team: ITALIAN <LL@li.org>\n"
-"Language: it_IT\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Juliana de Oliveira Brasilio <juuhbrasilio@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,76 +14,79 @@ msgstr ""
 #: calculus/ui/calculus_window.py
 
 msgid "No input data"
-msgstr "Nessun dato di input"
+msgstr "No hay datos para ingresar"
 
 msgid "Expressions must be univariable"
-msgstr "Le espressioni devono essere univariabili"
+msgstr "Las expresiones deben ser univariables"
 
 msgid "Input operand"
-msgstr "Operando di input"
+msgstr "Llenar el operando"
 
 msgid "Input operation variable"
-msgstr "Variabile di operazione di input"
+msgstr "Llenar la variable de operación"
 
 msgid "Syntax error"
-msgstr "Errore di sintassi"
+msgstr "Error de sintaxis"
 
 #: data/ui/calculus_window.ui
 
 msgid "Differential and Integral Calculator"
-msgstr "Calcolatrice differenziale e integrale"
+msgstr "Calculadora Diferencial e Integral"
 
-msgid "Operation variable"
-msgstr "Variabile di operazione"
+msgid "Operation variable:"
+msgstr "Variable de operación:"
 
 msgid "Differentiate"
-msgstr "Differenziare"
+msgstr "Diferenciar"
 
 msgid "Integrate"
-msgstr "Integrare"
+msgstr "Integrar"
 
 msgid "Operate"
 msgstr "Operar"
 
-#: data/ui/window.ui data/ui/plot_window.ui
+#: data/ui/calculus_window.ui data/ui/plot_window.ui
 msgid "Plot"
-msgstr "Traccia"
+msgstr "Proyectar"
 
 #: data/ui/plot_window.ui
+
 msgid "Graphics"
-msgstr "Grafica"
+msgstr "Gráficos"
 
 msgid "Inferior limit"
-msgstr "Limite inferiore"
+msgstr "Límite inferior de rango"
 
 msgid "Superior limit"
-msgstr "Limite superiore"
+msgstr "Límite superior de rango"
 
 msgid "Color 1"
-msgstr "Colore 1"
+msgstr "Color 1"
 
 msgid "Color 2"
-msgstr "Colore 2"
+msgstr "Color 2"
 
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Cancelar"
 
 #: calculus/ui/plot_window.py
 
 msgid "The interval must be numeric"
-msgstr "L'intervallo deve essere numerico"
+msgstr "El rango debe ser numérico"
 
 msgid "Original Expression and Result"
-msgstr "Espressione Originale e Risultato"
+msgstr "Expresión original y resultado"
 
 msgid "Original"
-msgstr "Originale"
+msgstr "Original"
 
 msgid "One or more symbols aren't defined"
-msgstr "Uno o più simboli non sono definiti"
+msgstr "Uno o más símbolos no están definidos"
 
 #: data/ui/calculus_window.ui calculus/ui/plot_window.py
 
 msgid "Result"
-msgstr "Resultato"
+msgstr "Resultado"
+
+
 

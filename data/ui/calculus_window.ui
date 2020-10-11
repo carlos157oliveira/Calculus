@@ -19,15 +19,32 @@
         <property name="valign">center</property>
         <property name="halign">center</property>
         <property name="orientation">vertical</property>
+
         <child>
-          <object class="GtkLabel" id="result">
+          <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">Result:</property>
-            <attributes>
-              <attribute name="weight" value="bold"/>
-            </attributes>
+            <property name="halign">center</property>
+            <child>
+              <object class="GtkLabel" id="result">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Result</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="label">:</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+            </child>
           </object>
         </child>
+
         <child>
           <object class="GtkImage" id="resultImage">
             <property name="visible">True</property>
@@ -39,17 +56,31 @@
             <property name="visible">True</property>
           </object>
         </child>
+
         <child>
 
           <object class="GtkBox">
             <property name="visible">True</property>
             <property name="spacing">10</property>
+
             <child>
-              <object class="GtkLabel">
-                <property name="label" translatable="yes">Operation variable:</property>
+              <object class="GtkBox">
                 <property name="visible">True</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Operation variable</property>
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="label">:</property>
+                  </object>
+                </child>
               </object>
             </child>
+
             <child>
               <object class="GtkEntry" id="variable">
                 <property name="visible">True</property>

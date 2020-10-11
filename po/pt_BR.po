@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: calculus/ui/window.py
+#: calculus/ui/calculus_window.py
 
 msgid "No input data"
 msgstr "Sem dados de entrada"
@@ -28,16 +28,13 @@ msgstr "Preencha a variável da operação"
 msgid "Syntax error"
 msgstr "Error de sintaxe"
 
-#: data/ui/window.ui
+#: data/ui/calculus_window.ui
 
 msgid "Differential and Integral Calculator"
 msgstr "Calculadora Diferencial e Integral"
 
-msgid "Result:"
-msgstr "Resultado:"
-
-msgid "Operation variable:"
-msgstr "Variável da operação:"
+msgid "Operation variable"
+msgstr "Variável da operação"
 
 msgid "Differentiate"
 msgstr "Diferenciar"
@@ -52,7 +49,7 @@ msgstr "Operar"
 msgid "Plot"
 msgstr "Plotar"
 
-#: data/ui/plot_window.ui:6
+#: data/ui/plot_window.ui
 msgid "Graphics"
 msgstr "Gráficos"
 
@@ -82,10 +79,11 @@ msgstr "Expressão Original e Resultado"
 msgid "Original"
 msgstr "Original"
 
+msgid "One or more symbols aren't defined"
+msgstr "Um ou mais símbolos não estão definidos"
+
+#: data/ui/calculus_window.ui calculus/ui/plot_window.py
+
 msgid "Result"
 msgstr "Resultado"
-
-msgid "One or more symbols aren't defined"
-msgstr "Um ou mais símbolos não são definidos"
-
 

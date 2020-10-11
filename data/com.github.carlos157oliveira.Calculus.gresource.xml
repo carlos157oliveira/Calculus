@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/com/github/carlos157oliveira/Calculus">
-    <file>ui/window.ui</file>
+    <file>ui/calculus_window.ui</file>
     <file>ui/plot_window.ui</file>
     <file>style.css</file>
   </gresource>
