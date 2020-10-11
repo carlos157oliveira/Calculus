@@ -13,13 +13,20 @@
   <summary>Compute derivatives and integrals</summary>
 	<description>
 	  <p>A practical tool to foresee the result of calculus exercises.</p>
+    <ul>
+      <li>Compute derivatives</li>
+      <li>Compute integrals</li>
+      <li>Plot the original expression and result within a given range</li>
+    </ul>
 	  <p>
-	    <ul>
-	      <li>Compute derivatives</li>
-	      <li>Compute integrals</li>
-	      <li>Plot the original expression and result within a given range</li>
-	    </ul>
-	  </p>
+      All available translations:
+    </p>
+    <ul>
+      <li>English</li>
+      <li>Portuguese</li>
+      <li>Italian</li>
+      <li>Spanish</li>
+    </ul>
 	</description>
   <screenshots>
     <screenshot type="default">
@@ -33,17 +40,15 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.3.0" date="2020-10-10">
+    <release version="1.3.0" date="2020-10-11">
       <description>
         <p>
           Added some translations.
         </p>
-        <p>
-          <ul>
-            <li>Italian translation (thanks to Albano Battistella)</li>
-            <li>Spanish translation (thanks to Juliana de Oliveira Brasilio)</li>
-          </ul>
-        </p>
+        <ul>
+          <li>Italian translation (thanks to Albano Battistella)</li>
+          <li>Spanish translation (thanks to Juliana de Oliveira Brasilio)</li>
+        </ul>
       </description>
     </release>
   </releases>

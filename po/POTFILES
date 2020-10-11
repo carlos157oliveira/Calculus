@@ -1,8 +1,8 @@
 calculus/main.py
 calculus/ui/plot_window.py
-calculus/ui/window.py
+calculus/ui/calculus_window.py
 data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in
 data/com.github.carlos157oliveira.Calculus.desktop.in.in
 data/com.github.carlos157oliveira.Calculus.gschema.xml
 data/ui/plot_window.ui
-data/ui/window.ui
+data/ui/calculus_window.ui
