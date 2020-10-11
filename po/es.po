@@ -33,8 +33,8 @@ msgstr "Error de sintaxis"
 msgid "Differential and Integral Calculator"
 msgstr "Calculadora Diferencial e Integral"
 
-msgid "Operation variable:"
-msgstr "Variable de operación:"
+msgid "Operation variable"
+msgstr "Variable de operación"
 
 msgid "Differentiate"
 msgstr "Diferenciar"
