@@ -35,7 +35,7 @@ If the **operation variable** is changed to ***y***, then the differentiation of
 
 The back-end of the application is made with [SymPy](https://www.sympy.org/en/index.html). There are some interesting things like:
 
-- You must separate the variables with **\*** (asterisk), don't omit this symbol or it will be understood that the variable is named with more than one letter. Example: ***abc*** mean variable with name "abc" and not value ***a*** times ***b*** times ***c****;
+- You must separate the variables with **\*** (asterisk), don't omit this symbol or it will be understood that the variable is named with more than one letter. Example: ***abc*** mean variable with name "abc" and not value ***a*** times ***b*** times ***c***;
 - The same apply to function. You can name a function with more than one letter, but remember to separate it from the expression using an algebraic operator;
 - If the function is unknown to SymPy, it will display an integral or differentiation symbol and the plot functionality won't be able to resolve the expression (image below show a unknown function **xsin**, which isn't **x\*sin** because the operator isn't implicitly adopted);
 ![unknown function xsin](https://raw.githubusercontent.com/carlos157oliveira/Calculus/gh-pages/img/5.png)
