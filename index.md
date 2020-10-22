@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## Calculus
 
-You can use the [editor on GitHub](https://github.com/carlos157oliveira/Calculus/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+If you are an undergradutate student or simply an affectionate to math, you might find useful this application to calculate derivatives, integrals and plot results within a given range.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Where to find
 
-### Markdown
+The application is distributed by flathub. [Click here for install page.](https://flathub.org/apps/details/com.github.carlos157oliveira.Calculus)
+You will find other cool stuff there too!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How to use
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/carlos157oliveira/Calculus/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
