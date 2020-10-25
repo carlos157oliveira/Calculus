@@ -10,7 +10,7 @@ i18n = import('i18n')
 APPLICATION_ID = 'com.github.carlos157oliveira.Calculus'
 PROJECT_RDNN_NAME = 'com.github.carlos157oliveira.Calculus'
 PKGDATA_DIR = join_paths(get_option('prefix'), get_option('datadir'), APPLICATION_ID)
-PACKAGE_URL = 'https://github.com/carlos157oliveira/Calculus'
+PACKAGE_URL = 'https://carlos157oliveira.github.io/Calculus'
 PACKAGE_URL_BUG = 'https://github.com/carlos157oliveira/Calculus/issues'
 
 # dependency('latex-base')
