@@ -2,7 +2,7 @@ from gi.repository import Gtk
 
 def warning_dialog(parent_widget, text):
 
-    dialog = Gtk.Dialog(title='Aviso',
+    dialog = Gtk.Dialog(title=_('Warning'),
                         transient_for=parent_widget,
                         flags=0,
                         buttons=(Gtk.STOCK_OK, Gtk.ResponseType.OK))

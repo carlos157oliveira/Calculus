@@ -87,3 +87,8 @@ msgstr "Um ou mais símbolos não estão definidos"
 msgid "Result"
 msgstr "Resultado"
 
+#: calculus/utils/dialogs.py
+
+msgid "Warning"
+msgstr "Aviso"
+
