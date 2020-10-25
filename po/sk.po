@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-18 20:44+0200\n"
+"PO-Revision-Date: 2020-10-25 HO:MI+ZONE\n"
+"Last-Translator: martin-sk\n"
+"Language-Team: https://github.com/martin-sk\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: calculus/ui/calculus_window.py
+
+msgid "No input data"
+msgstr "Žiadne vstupné dáta"
+
+msgid "Expressions must be univariable"
+msgstr "Výrazy musia byť nemenné"
+
+msgid "Input operand"
+msgstr "Vstupný operand"
+
+msgid "Input operation variable"
+msgstr "Vstupná operačná premenná"
+
+msgid "Syntax error"
+msgstr "Chyba syntaxu"
+
+#: data/ui/calculus_window.ui
+
+msgid "Differential and Integral Calculator"
+msgstr "Diferenciálna a integrálna kalkulačka"
+
+msgid "Operation variable"
+msgstr "Premenná operácie"
+
+msgid "Differentiate"
+msgstr "Diferenciácia"
+
+msgid "Integrate"
+msgstr "Integrácia"
+
+msgid "Operate"
+msgstr "Oparácia"
+
+#: data/ui/calculus_window.ui data/ui/plot_window.ui
+msgid "Plot"
+msgstr "Vykresliť"
+
+#: data/ui/plot_window.ui
+
+msgid "Graphics"
+msgstr "Grafika"
+
+msgid "Inferior limit"
+msgstr "Dolná hranica"
+
+msgid "Superior limit"
+msgstr "Horná hranica"
+
+msgid "Color 1"
+msgstr "Farba 1"
+
+msgid "Color 2"
+msgstr "Farba 2"
+
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: calculus/ui/plot_window.py
+
+msgid "The interval must be numeric"
+msgstr "Interval musí byť číselný"
+
+msgid "Original Expression and Result"
+msgstr "Pôvodný výraz a výsledok"
+
+msgid "Original"
+msgstr "Pôvodný"
+
+msgid "One or more symbols aren't defined"
+msgstr "Jeden alebo viac symbolov nie je definovaných"
+
+#: data/ui/calculus_window.ui calculus/ui/plot_window.py
+
+msgid "Result"
+msgstr "Výsledok"
+
+#: calculus/utils/dialogs.py
+
+msgid "Warning"
+msgstr "Upozornenie"
