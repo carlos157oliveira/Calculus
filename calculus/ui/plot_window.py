@@ -54,14 +54,11 @@ class PlotWindow(Gtk.ApplicationWindow):
         color1 = (color1.red, color1.green, color1.blue)
         color2 = (color2.red, color2.green, color2.blue)
 
-        try:
-            Plots.n_subplots(_('Original Expression and Result'),
+        Plots.n_subplots(_('Original Expression and Result'),
                                 (liminf, limsup),
                                 (self.f1, self.f2),
                                 (_('Original'), _('Result')),
                                 (color1, color2))
-        except NameError:
-            warning_dialog(self, _('One or more symbols aren\'t defined'))
 
         self.close()
 

@@ -70,3 +70,6 @@ class SympyHandler:
 
     def is_result_univariable(self):
         return len(self.last_result.free_symbols) <= 1
+
+    def is_operand_univariable(self):
+        return len(self.operand.free_symbols) <= 1

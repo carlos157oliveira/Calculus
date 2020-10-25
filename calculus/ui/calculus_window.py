@@ -126,10 +126,20 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
         if self.sympy_handler.is_result_ready():
 
-            if self.sympy_handler.is_result_univariable():
+            if (self.sympy_handler.is_result_univariable()
+                and self.sympy_handler.is_operand_univariable()):
 
                 f = self.sympy_handler.lambdify_operand()
                 g = self.sympy_handler.lambdify_result()
+
+                try:
+                    f(0)
+                    g(0)
+                except NameError:
+                    warning_dialog(self, _('One or more symbols aren\'t defined'))
+                    return
+                except ZeroDivisionError:
+                    pass
 
                 plot_window = PlotWindow(f1=f, f2=g)
                 plot_window.present()
