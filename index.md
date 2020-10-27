@@ -44,7 +44,7 @@ The back-end of the application is made with [SymPy](https://www.sympy.org/en/in
 
 ### Plotting expressions
 
-Not only can the application calculate derivatives and integrals, it can even plot the both the original expression and the displayed result! For this to work, you need to use a univariable expression. If the expression is multivariable, consider substituting the variables that won't be used with numerical fixed values.
+Not only can the application calculate derivatives and integrals, it can even plot the original expression and the displayed result! This only works with a univariable expression. If the expression is multivariable, consider substituting the variables that won't be used with numerical fixed values.
 
 After a result has been stored by the application, use the plot button.
 ![plot window](https://raw.githubusercontent.com/carlos157oliveira/Calculus/gh-pages/img/7.png)
