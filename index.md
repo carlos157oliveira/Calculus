@@ -1,10 +1,10 @@
 # Calculus
 
-Whether you are an undergraduate student or just a math geek, you will appreciate this application to calculate derivatives and integrals and plot the results within a given range.
+Whether you are an undergraduate student or just a math geek, you will appreciate this application for calculating and plotting derivatives and integrals.
 
 ## Where to find
 
-You can install the application from Flathub. [Click here for install page.](https://flathub.org/apps/details/com.github.carlos157oliveira.Calculus)
+You can install the application from [Flathub.](https://flathub.org/apps/details/com.github.carlos157oliveira.Calculus)
 
 You will find other cool stuff there too!
 
@@ -44,7 +44,7 @@ The back-end of the application is made with [SymPy](https://www.sympy.org/en/in
 
 ### Plotting expressions
 
-The application has this bonus feature which is plot the original expression and the result that is displayed! Although it needs to be an univariable expression. If the expression is multivariable, consider substituting for the variables that won't be used their numerical fixed values.
+Not only can the application calculate derivatives and integrals, it can even plot the both the original expression and the displayed result! For this to work, you need to use a univariable expression. If the expression is multivariable, consider substituting the variables that won't be used with numerical fixed values.
 
 After a result has been stored by the application, use the plot button.
 ![plot window](https://raw.githubusercontent.com/carlos157oliveira/Calculus/gh-pages/img/7.png)
