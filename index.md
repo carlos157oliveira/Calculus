@@ -1,10 +1,10 @@
 # Calculus
 
-If you are an undergradutate student or simply an affectionate to math, you might find useful this application to calculate derivatives, integrals and plot results within a given range.
+Whether you are an undergraduate student or just a math geek, you will appreciate this application for calculating and plotting derivatives and integrals.
 
 ## Where to find
 
-The application is distributed by flathub. [Click here for install page.](https://flathub.org/apps/details/com.github.carlos157oliveira.Calculus)
+You can install the application from [Flathub.](https://flathub.org/apps/details/com.github.carlos157oliveira.Calculus)
 
 You will find other cool stuff there too!
 
@@ -12,9 +12,9 @@ You will find other cool stuff there too!
 
 ### Interface
 
-After you have first opened the application, you will see three fields.
+When you open the application, you will see three fields:
 
-- The main field is the expression upon which you want to operate;
+- The main field is the expression you are performing the operation on;
 - The second field is the variable with which the operation will be done. For example, use ***x*** if the operation is **differentiate with respect to *x*** (or **integrate**);
 - The last is the chosen operation: differentiate or integrate.
 
@@ -44,7 +44,7 @@ The back-end of the application is made with [SymPy](https://www.sympy.org/en/in
 
 ### Plotting expressions
 
-The application has this bonus feature which is plot the original expression and the result that is displayed! Although it needs to be an univariable expression. If the expression is multivariable, consider substituting for the variables that won't be used their numerical fixed values.
+Not only can the application calculate derivatives and integrals, it can even plot the original expression and the displayed result! This only works with a univariable expression. If the expression is multivariable, consider substituting the variables that won't be used with numerical fixed values.
 
 After a result has been stored by the application, use the plot button.
 ![plot window](https://raw.githubusercontent.com/carlos157oliveira/Calculus/gh-pages/img/7.png)
