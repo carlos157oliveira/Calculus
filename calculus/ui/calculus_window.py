@@ -24,6 +24,7 @@ from .dialogs.warning_dialog import WarningDialog
 
 import threading
 from queue import Queue
+import numpy as np
 
 @Gtk.Template(resource_path='/com/github/carlos157oliveira/Calculus/ui/calculus_window.ui')
 class CalculusWindow(Gtk.ApplicationWindow):
@@ -134,8 +135,10 @@ class CalculusWindow(Gtk.ApplicationWindow):
                 g = self.sympy_handler.lambdify_result()
 
                 try:
-                    f(0)
-                    g(0)
+                    # we need to pass numpy arrays because
+                    # the inner logic uses a numpy array attribute
+                    f(np.array([0]))
+                    g(np.array([0]))
                 except NameError:
                     self.warning_dialog.show(_('One or more symbols aren\'t defined'))
                     return
