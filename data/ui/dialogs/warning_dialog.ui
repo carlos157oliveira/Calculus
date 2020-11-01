@@ -4,9 +4,7 @@
   <template class="WarningDialog" parent="GtkDialog">
     <property name="modal">True</property>
     <property name="title" translatable="yes">Warning</property>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
+
     <child internal-child="vbox">
       <object class="GtkBox">
         <child>
