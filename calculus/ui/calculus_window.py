@@ -17,10 +17,10 @@
 
 from gi.repository import Gtk, GLib
 
-from ..utils.dialogs import warning_dialog
 from ..utils.plots import Plots
 from ..utils.sympy_handler import SympyHandler
 from .plot_window import PlotWindow
+from .dialogs.warning_dialog import WarningDialog
 
 import threading
 from queue import Queue
@@ -45,6 +45,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        self.warning_dialog = WarningDialog(self)
         self.sympy_handler = SympyHandler()
 
         # getting the style right so the plot of the math formula can be shown accordingly to the theme
@@ -65,7 +66,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
                     self.operateButton.set_sensitive(True)
                     self.plotButton.set_sensitive(True)
                     if error:
-                        warning_dialog(self, error)
+                        self.warning_dialog.show(error)
                     q.task_done()
                     return False
                 return True
@@ -136,7 +137,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
                     f(0)
                     g(0)
                 except NameError:
-                    warning_dialog(self, _('One or more symbols aren\'t defined'))
+                    self.warning_dialog.show(_('One or more symbols aren\'t defined'))
                     return
                 except ZeroDivisionError:
                     pass
@@ -144,8 +145,8 @@ class CalculusWindow(Gtk.ApplicationWindow):
                 plot_window = PlotWindow(f1=f, f2=g)
                 plot_window.present()
             else:
-                warning_dialog(self, _('Expressions must be univariable'))
+                self.warning_dialog.show(_('Expressions must be univariable'))
 
         else:
-            warning_dialog(self, _('No input data'))
+            self.warning_dialog.show(_('No input data'))
 

@@ -17,8 +17,8 @@
 
 from gi.repository import Gtk
 
-from ..utils.dialogs import warning_dialog
 from ..utils.plots import Plots
+from .dialogs.warning_dialog import WarningDialog
 
 
 @Gtk.Template(resource_path='/com/github/carlos157oliveira/Calculus/ui/plot_window.ui')
@@ -33,6 +33,8 @@ class PlotWindow(Gtk.ApplicationWindow):
     def __init__(self, f1, f2, **kwargs):
         super().__init__(**kwargs)
 
+        self.warning_dialog = WarningDialog(self)
+
         self.f1 = f1
         self.f2 = f2
 
@@ -44,7 +46,7 @@ class PlotWindow(Gtk.ApplicationWindow):
             limsup = float(self.limsupEntry.get_text())
             liminf = float(self.liminfEntry.get_text())
         except ValueError:
-            warning_dialog(self, _('The interval must be numeric'))
+            self.warning_dialog.show(_('The interval must be numeric'))
             return
 
 

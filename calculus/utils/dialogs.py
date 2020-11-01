@@ -1,3 +1,4 @@
+'''
 from gi.repository import Gtk
 
 def warning_dialog(parent_widget, text):
@@ -22,4 +23,4 @@ def warning_dialog(parent_widget, text):
     dialog.show_all()
     dialog.run()
     dialog.destroy()
-    
+'''
