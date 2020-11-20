@@ -117,8 +117,11 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
         txt = self.sympy_handler.get_last_result_as_latex()
         txt = '{0}{1}{0}'.format('$', txt)
-
-        self.resultImage.set_from_pixbuf(Plots.load_pixbuff_text(txt, self.resultColor))
+        try:
+            self.resultImage.set_from_pixbuf(Plots.load_pixbuff_text(txt, self.resultColor))
+        except ValueError:
+            q.put(_('Displaying result error'))
+            return
 
         q.put(None)
 
