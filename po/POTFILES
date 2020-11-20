@@ -6,3 +6,4 @@ data/com.github.carlos157oliveira.Calculus.desktop.in.in
 data/com.github.carlos157oliveira.Calculus.gschema.xml
 data/ui/plot_window.ui
 data/ui/calculus_window.ui
+data/ui/dialogs/warning_dialog.ui

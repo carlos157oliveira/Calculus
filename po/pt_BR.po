@@ -45,6 +45,9 @@ msgstr "Integrar"
 msgid "Operate"
 msgstr "Operar"
 
+msgid "Displaying result error"
+msgstr "Erro ao mostrar resultado"
+
 #: data/ui/window.ui data/ui/plot_window.ui
 msgid "Plot"
 msgstr "Plotar"
