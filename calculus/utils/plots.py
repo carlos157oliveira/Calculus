@@ -29,9 +29,17 @@ class Plots:
     def load_pixbuff_text(txt, color):
         # dependency on LaTeX wasn't successfully configured
         # rcParams['text.usetex'] = True
-        plt.figure(figsize=(4,0.75))
+
+        # old fixed size
+        #plt.figure(figsize=(4,0.75))
+
+        # Take figure's dpi and calculate size in inches through text size in pixels
+
+        fig = plt.figure()
+        dpi = fig.dpi
+        r = fig.canvas.get_renderer()
         plt.axis('off')
-        plt.text(
+        textimage = plt.text(
             0.5,
             0.5,
             txt,
@@ -40,9 +48,14 @@ class Plots:
             verticalalignment='center',
             color=color)
 
+        bb = textimage.get_window_extent(renderer=r)
+        fig.set_size_inches((bb.width + 20) / dpi, bb.height / dpi)
+
         buff = io.BytesIO()
+
         plt.savefig(buff, format='png', transparent=True)
         inputStream = Gio.MemoryInputStream.new_from_data(buff.getvalue())
+
         plt.close()
 
         return GdkPixbuf.Pixbuf.new_from_stream(inputStream)
