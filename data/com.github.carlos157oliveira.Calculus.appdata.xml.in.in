@@ -41,6 +41,17 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.3.4" date="2020-11-20">
+      <description>
+        <p>
+          Fixed some bugs:
+        </p>
+        <ul>
+          <li>Image result size now vary according to the text;</li>
+          <li>Shows error message when image rendering fails.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.3.3" date="2020-10-31">
       <description>
         <p>
