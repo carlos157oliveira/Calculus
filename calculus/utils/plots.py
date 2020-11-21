@@ -49,7 +49,12 @@ class Plots:
             color=color)
 
         bb = textimage.get_window_extent(renderer=r)
-        fig.set_size_inches((bb.width + 20) / dpi, bb.height / dpi)
+
+        # We multiply by a correction factor of 1.025 to have a little margin
+        # Experience showed width is cropped the larger it is without the factor
+        width_inches = bb.width * 1.025 / dpi
+        height_inches = bb.height * 1.025 / dpi
+        fig.set_size_inches(width_inches, height_inches)
 
         buff = io.BytesIO()
 
