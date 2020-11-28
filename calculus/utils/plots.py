@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import io
 # from matplotlib import rcParams
-from gi.repository import GdkPixbuf, Gio
 
 class Plots:
 
@@ -26,7 +25,7 @@ class Plots:
         fig.legend()
         fig.show()
 
-    def load_pixbuff_text(txt, color):
+    def get_buffer_with_text(txt, color):
         # dependency on LaTeX wasn't successfully configured
         # rcParams['text.usetex'] = True
 
@@ -62,9 +61,7 @@ class Plots:
         buff = io.BytesIO()
 
         plt.savefig(buff, format='png', transparent=True)
-        inputStream = Gio.MemoryInputStream.new_from_data(buff.getvalue())
-
-        return GdkPixbuf.Pixbuf.new_from_stream(inputStream)
+        return buff
 
 
     def open_result_in_external_viewer(txt):

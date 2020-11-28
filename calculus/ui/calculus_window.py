@@ -15,15 +15,14 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, GLib, Gdk
+from gi.repository import Gtk, GLib, Gdk, GdkPixbuf, Gio
 
 from ..utils.plots import Plots
 from ..utils.sympy_handler import SympyHandler
 from .plot_window import PlotWindow
 from .dialogs.warning_dialog import WarningDialog
 
-import threading
-from queue import Queue
+import multiprocessing
 import numpy as np
 
 @Gtk.Template(resource_path='/com/github/carlos157oliveira/Calculus/ui/calculus_window.ui')
@@ -71,26 +70,34 @@ class CalculusWindow(Gtk.ApplicationWindow):
     def spinner(original_function):
         def modified_function(self, widget):
 
-            def check_function(q):
-                if not q.empty():
-                    error = q.get()
+            def check_function(conn):
+
+                if conn.poll():
+                    result = conn.recv()
+
                     self.operateSpinner.stop()
                     self.operateButton.set_sensitive(True)
                     self.plotButton.set_sensitive(True)
-                    if error:
-                        self.warning_dialog.show(error)
-                    q.task_done()
+
+                    if result.is_error:
+                        self.warning_dialog.show(result.data)
+                    else:
+                        input_stream = Gio.MemoryInputStream.new_from_data(result.data.getvalue())
+                        pixbuf = GdkPixbuf.Pixbuf.new_from_stream(input_stream)
+                        self.resultImage.set_from_pixbuf(pixbuf)
+
                     return False
-                return True
+                else:
+                    return True
+
 
             self.operateButton.set_sensitive(False)
             self.plotButton.set_sensitive(False)
 
-
             self.operateSpinner.start()
-            q = Queue()
-            threading.Thread(target=original_function, args=[self, widget, q]).start()
-            GLib.timeout_add(250, check_function, q)
+            conn1, conn2 = multiprocessing.Pipe(False)
+            multiprocessing.Process(target=original_function, args=[self, widget, conn2]).start()
+            GLib.timeout_add(250, check_function, conn1)
 
 
         return modified_function
@@ -99,25 +106,24 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     @spinner
-    def operate(self, widget, q):
-
+    def operate(self, widget, conn):
 
         variableText = self.variableEntry.get_text()
         operandText = self.operandEntry.get_text()
 
         if operandText == '':
-            q.put(_('Input operand'))
+            conn.send(Result(True, _('Input operand')))
             return
 
         if variableText == '':
-            q.put(_('Input operation variable'))
+            conn.send(Result(True, _('Input operation variable')))
             return
 
         try:
             self.sympy_handler.set_variable_from_text(variableText)
             self.sympy_handler.set_operand_from_text(operandText)
         except Exception:
-            q.put(_('Syntax error'))
+            conn.send(Result(True, _('Syntax error')))
             return
 
         if(self.togDiff.get_active()):
@@ -128,12 +134,12 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
         txt = self._get_formatted_result()
         try:
-            self.resultImage.set_from_pixbuf(Plots.load_pixbuff_text(txt, self.resultColor))
+            result_data = Plots.get_buffer_with_text(txt, self.resultColor)
         except ValueError:
-            q.put(_('Displaying result error'))
+            conn.send(Result(True, _('Displaying result error')))
             return
 
-        q.put(None)
+        conn.send(Result(False, result_data))
 
 
     @Gtk.Template.Callback()
@@ -166,6 +172,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
         else:
             self.warning_dialog.show(_('No input data'))
 
+
     def _open_result_in_separate_window(self, action, param, user_data):
         if not self.sympy_handler.is_result_ready():
             return
@@ -176,10 +183,19 @@ class CalculusWindow(Gtk.ApplicationWindow):
         except ValueError:
             self.warning_dialog.show(_('Displaying result error'))
 
+
     def _copy_result_latex_code(self, action, param, user_data):
         self.clipboard.set_text(self.sympy_handler.get_last_result_as_full_latex(), -1)
+
 
     def _get_formatted_result(self):
         txt = self.sympy_handler.get_last_result_as_latex()
         txt = '{0}{1}{0}'.format('$', txt)
         return txt
+
+class Result:
+
+    def __init__(self, is_error, data):
+        self.is_error = is_error
+        self.data = data
+        
