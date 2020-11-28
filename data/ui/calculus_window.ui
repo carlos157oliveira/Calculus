@@ -245,6 +245,10 @@
             <property name="can-focus">True</property>
             <property name="focus-on-click">False</property>
             <property name="receives-default">True</property>
+            <property name="direction">none</property>
+            <child>
+              <placeholder/>
+            </child>
             <style>
               <class name="image-button"/>
             </style>
