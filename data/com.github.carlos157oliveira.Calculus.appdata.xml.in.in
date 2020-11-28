@@ -19,14 +19,15 @@
       <li>Plot the original expression and result within a given range</li>
     </ul>
 	  <p>
+	    If you are interested, open an issue in github to update a translation or make a pull request.
       All available translations:
     </p>
     <ul>
       <li>English</li>
       <li>Portuguese</li>
-      <li>Italian</li>
-      <li>Spanish</li>
-      <li>Slovakian</li>
+      <li>Italian (outdated)</li>
+      <li>Spanish (outdated)</li>
+      <li>Slovakian (outdated)</li>
     </ul>
 	</description>
   <screenshots>
@@ -41,6 +42,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.4.0" date="2020-11-28">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Open result in separate window;</li>
+          <li>Export result as LaTeX code;</li>
+          <li>Implemented multiprocessing for result computation.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.3.6" date="2020-11-22">
       <description>
         <p>
