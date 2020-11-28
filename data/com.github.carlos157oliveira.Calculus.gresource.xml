@@ -4,6 +4,7 @@
     <file>ui/calculus_window.ui</file>
     <file>ui/plot_window.ui</file>
     <file>ui/dialogs/warning_dialog.ui</file>
+    <file>ui/menu.ui</file>
     <file>style.css</file>
   </gresource>
 </gresources>

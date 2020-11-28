@@ -1,0 +1,17 @@
+<interface>
+  <menu id="menu">
+    <section>
+      <attribute name="label" translatable="yes">Result</attribute>
+      <item>
+        <attribute name="label" translatable="yes">Open result in separate window</attribute>
+        <attribute name="action">win.open_result_in_separate_window</attribute>
+        <attribute name="icon">document-open</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Copy LaTeX code</attribute>
+        <attribute name="action">win.copy_result_latex_code</attribute>
+        <attribute name="icon">edit-copy</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

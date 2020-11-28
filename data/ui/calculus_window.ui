@@ -1,150 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.1 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-    <template class="CalculusWindow" parent="GtkApplicationWindow">
+  <template class="CalculusWindow" parent="GtkApplicationWindow">
+    <property name="can-focus">False</property>
     <property name="default-width">600</property>
     <property name="default-height">300</property>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
-        <property name="visible">True</property>
-        <property name="show-close-button">True</property>
-        <property name="title" translatable="yes">Differential and Integral Calculator</property>
-      </object>
-    </child>
     <child>
       <object class="GtkBox" id="box">
-        <property name="margin">20</property>
         <property name="visible">True</property>
-        <property name="spacing">20</property>
-        <property name="valign">center</property>
+        <property name="can-focus">False</property>
         <property name="halign">center</property>
+        <property name="valign">center</property>
         <property name="orientation">vertical</property>
-
+        <property name="spacing">20</property>
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
+            <property name="can-focus">False</property>
             <property name="halign">center</property>
             <child>
               <object class="GtkLabel" id="result">
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Result</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
             </child>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="label">:</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
             </child>
           </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
         </child>
-
         <child>
           <object class="GtkImage" id="resultImage">
             <property name="visible">True</property>
+            <property name="can-focus">False</property>
           </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
         </child>
-
         <child>
           <object class="GtkEntry" id="operand">
             <property name="visible">True</property>
+            <property name="can-focus">True</property>
           </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
         </child>
-
         <child>
-
           <object class="GtkBox">
             <property name="visible">True</property>
+            <property name="can-focus">False</property>
             <property name="spacing">10</property>
-
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkLabel">
-                    <property name="label" translatable="yes">Operation variable</property>
                     <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Operation variable</property>
                   </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
                 </child>
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
+                    <property name="can-focus">False</property>
                     <property name="label">:</property>
                   </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
                 </child>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
             </child>
-
             <child>
               <object class="GtkEntry" id="variable">
                 <property name="visible">True</property>
+                <property name="can-focus">True</property>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
             </child>
           </object>
-
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
         </child>
         <child>
-
-          <object class="GtkBox">
-          <property name="visible">True</property>
-          <child>
-            <object class="GtkRadioButton" id="togDiff">
-              <property name="label" translatable="yes">Differentiate</property>
-              <property name="visible">True</property>
-              <property name="group">togDiff</property>
-            </object>
-          </child>
-          <child>
-            <object class="GtkRadioButton" id="togInt">
-              <property name="label" translatable="yes">Integrate</property>
-              <property name="visible">True</property>
-              <property name="group">togDiff</property>
-            </object>
-          </child>
-          </object>
-
-        </child>
-        <child>
-
           <object class="GtkBox">
             <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkRadioButton" id="togDiff">
+                <property name="label" translatable="yes">Differentiate</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">False</property>
+                <property name="draw-indicator">False</property>
+                <property name="group">togDiff</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="togInt">
+                <property name="label" translatable="yes">Integrate</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">False</property>
+                <property name="draw-indicator">False</property>
+                <property name="group">togDiff</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
             <property name="spacing">15</property>
             <child>
               <object class="GtkButton" id="operateButton">
                 <property name="label" translatable="yes">Operate</property>
                 <property name="visible">True</property>
-                <signal name="clicked" handler="operate"/>
+                <property name="can-focus">False</property>
+                <property name="receives-default">False</property>
+                <signal name="clicked" handler="operate" swapped="no"/>
                 <style>
-                  <class name="suggested-action"></class>
+                  <class name="suggested-action"/>
                 </style>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
             </child>
             <child>
               <object class="GtkSpinner" id="operateSpinner">
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
             </child>
             <child>
               <object class="GtkButton" id="plotButton">
                 <property name="label" translatable="yes">Plot</property>
                 <property name="visible">True</property>
-                <signal name="clicked" handler="invoke_plot_dialog"/>
+                <property name="can-focus">False</property>
+                <property name="receives-default">False</property>
+                <signal name="clicked" handler="invoke_plot_dialog" swapped="no"/>
               </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
             </child>
           </object>
-
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">5</property>
+          </packing>
         </child>
-
       </object>
-
     </child>
-
-    </template>
-
-  </interface>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="title" translatable="yes">Differential and Integral Calculator</property>
+        <property name="show-close-button">True</property>
+        <child>
+          <object class="GtkMenuButton" id="menu_button">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <style>
+              <class name="image-button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="pack-type">end</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

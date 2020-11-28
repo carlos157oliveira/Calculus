@@ -85,7 +85,7 @@ msgstr "Original"
 msgid "One or more symbols aren't defined"
 msgstr "Um ou mais símbolos não estão definidos"
 
-#: data/ui/calculus_window.ui calculus/ui/plot_window.py
+#: data/ui/calculus_window.ui calculus/ui/plot_window.py #: data/ui/menu.ui
 
 msgid "Result"
 msgstr "Resultado"
@@ -94,4 +94,12 @@ msgstr "Resultado"
 
 msgid "Warning"
 msgstr "Aviso"
+
+#: data/ui/menu.ui
+
+msgid "Open result in separate window"
+msgstr "Ver resultado numa janela separada"
+
+msgid "Copy LaTeX code"
+msgstr "Copiar código LaTeX"
 

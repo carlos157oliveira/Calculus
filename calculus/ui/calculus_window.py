@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, GLib
+from gi.repository import Gtk, GLib, Gdk
 
 from ..utils.plots import Plots
 from ..utils.sympy_handler import SympyHandler
@@ -41,10 +41,21 @@ class CalculusWindow(Gtk.ApplicationWindow):
     resultColor = None
     operateButton = Gtk.Template.Child()
     plotButton = Gtk.Template.Child()
+    menu_button = Gtk.Template.Child()
+    clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
 
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+        menu_builder = Gtk.Builder.new_from_resource('/com/github/carlos157oliveira/Calculus/ui/menu.ui')
+        menu_model = menu_builder.get_object('menu')
+        self.menu_button.set_menu_model(menu_model)
+
+        self.add_action_entries([
+            ['open_result_in_separate_window', self._open_result_in_separate_window, None, None, None],
+            ['copy_result_latex_code', self._copy_result_latex_code, None, None, None]
+        ])
 
         self.warning_dialog = WarningDialog(self)
         self.sympy_handler = SympyHandler()
@@ -115,8 +126,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
             self.sympy_handler.integrate()
 
 
-        txt = self.sympy_handler.get_last_result_as_latex()
-        txt = '{0}{1}{0}'.format('$', txt)
+        txt = self._get_formatted_result()
         try:
             self.resultImage.set_from_pixbuf(Plots.load_pixbuff_text(txt, self.resultColor))
         except ValueError:
@@ -156,3 +166,20 @@ class CalculusWindow(Gtk.ApplicationWindow):
         else:
             self.warning_dialog.show(_('No input data'))
 
+    def _open_result_in_separate_window(self, action, param, user_data):
+        if not self.sympy_handler.is_result_ready():
+            return
+
+        txt = self._get_formatted_result()
+        try:
+            Plots.open_result_in_external_viewer(txt)
+        except ValueError:
+            self.warning_dialog.show(_('Displaying result error'))
+
+    def _copy_result_latex_code(self, action, param, user_data):
+        self.clipboard.set_text(self.sympy_handler.get_last_result_as_full_latex(), -1)
+
+    def _get_formatted_result(self):
+        txt = self.sympy_handler.get_last_result_as_latex()
+        txt = '{0}{1}{0}'.format('$', txt)
+        return txt

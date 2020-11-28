@@ -33,12 +33,15 @@ class Plots:
         # old fixed size
         #plt.figure(figsize=(4,0.75))
 
-        # Take figure's dpi and calculate size in inches through text size in pixels
+        # make sure no image is in matplotlib's buffer
+        plt.close()
 
+        # Take figure's dpi and calculate size in inches through text size in pixels
         fig = plt.figure()
         dpi = fig.dpi
         r = fig.canvas.get_renderer()
         plt.axis('off')
+
         textimage = plt.text(
             0.5,
             0.5,
@@ -61,6 +64,22 @@ class Plots:
         plt.savefig(buff, format='png', transparent=True)
         inputStream = Gio.MemoryInputStream.new_from_data(buff.getvalue())
 
+        return GdkPixbuf.Pixbuf.new_from_stream(inputStream)
+
+
+    def open_result_in_external_viewer(txt):
+        # make sure no image is in matplotlib's buffer
         plt.close()
 
-        return GdkPixbuf.Pixbuf.new_from_stream(inputStream)
+        fig = plt.figure()
+        plt.axis('off')
+
+        textimage = plt.text(
+            0.5,
+            0.5,
+            txt,
+            fontsize=20,
+            horizontalalignment='center',
+            verticalalignment='center')
+
+        plt.show()
