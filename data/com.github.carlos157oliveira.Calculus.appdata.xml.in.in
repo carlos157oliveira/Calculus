@@ -42,6 +42,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.4.1" date="2020-11-28">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Open result in separate window;</li>
+          <li>Export result as LaTeX code;</li>
+          <li>Implemented multiprocessing for result computation.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.4.0" date="2020-11-28">
       <description>
         <p>New features:</p>
