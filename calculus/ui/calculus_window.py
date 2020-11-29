@@ -79,6 +79,10 @@ class CalculusWindow(Gtk.ApplicationWindow):
                     self.operateButton.set_sensitive(True)
                     self.plotButton.set_sensitive(True)
 
+                    # since sympy handler is modified in another process, update it in the main process
+                    if result.sympy_handler:
+                        self.sympy_handler = result.sympy_handler
+
                     if result.is_error:
                         self.warning_dialog.show(result.data)
                     else:
@@ -136,10 +140,10 @@ class CalculusWindow(Gtk.ApplicationWindow):
         try:
             result_data = Plots.get_buffer_with_text(txt, self.resultColor)
         except ValueError:
-            conn.send(Result(True, _('Displaying result error')))
+            conn.send(Result(True, _('Displaying result error'), self.sympy_handler))
             return
 
-        conn.send(Result(False, result_data))
+        conn.send(Result(False, result_data, self.sympy_handler))
 
 
     @Gtk.Template.Callback()
@@ -174,6 +178,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
 
     def _open_result_in_separate_window(self, action, param, user_data):
+
         if not self.sympy_handler.is_result_ready():
             return
 
@@ -185,6 +190,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
 
     def _copy_result_latex_code(self, action, param, user_data):
+
         self.clipboard.set_text(self.sympy_handler.get_last_result_as_full_latex(), -1)
 
 
@@ -193,9 +199,12 @@ class CalculusWindow(Gtk.ApplicationWindow):
         txt = '{0}{1}{0}'.format('$', txt)
         return txt
 
+
 class Result:
 
-    def __init__(self, is_error, data):
+    def __init__(self, is_error, data, sympy_handler=None):
+
         self.is_error = is_error
         self.data = data
+        self.sympy_handler = sympy_handler
         
