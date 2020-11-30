@@ -91,3 +91,14 @@ msgstr "Resultato"
 
 msgid "Warning"
 msgstr "Avviso"
+
+#: data/ui/menu.ui
+
+msgid "Open result in separate window"
+msgstr "Apri il risultato in una finestra separata"
+
+msgid "Copy LaTeX code"
+msgstr "Copia il codice LaTeX"
+
+msgid "Export result as PNG"
+msgstr "Esporta il risultato come PNG"
