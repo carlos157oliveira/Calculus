@@ -42,6 +42,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.5.0" date="2020-11-29">
+      <description>
+        <p>New feature:</p>
+        <ul>
+          <li>Export result as PNG;</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.4.1" date="2020-11-28">
       <description>
         <p>New features:</p>
