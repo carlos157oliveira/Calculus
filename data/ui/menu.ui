@@ -12,6 +12,11 @@
         <attribute name="action">win.copy_result_latex_code</attribute>
         <attribute name="icon">edit-copy</attribute>
       </item>
+      <item>
+        <attribute name="label" translatable="yes">Export result as PNG</attribute>
+        <attribute name="action">win.export_result_as_png</attribute>
+        <attribute name="icon">document-save</attribute>
+      </item>
     </section>
   </menu>
 </interface>

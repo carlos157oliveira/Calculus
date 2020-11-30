@@ -53,7 +53,8 @@ class CalculusWindow(Gtk.ApplicationWindow):
 
         self.add_action_entries([
             ['open_result_in_separate_window', self._open_result_in_separate_window, None, None, None],
-            ['copy_result_latex_code', self._copy_result_latex_code, None, None, None]
+            ['copy_result_latex_code', self._copy_result_latex_code, None, None, None],
+            ['export_result_as_png', self._export_result_as_png, None, None, None]
         ])
 
         self.warning_dialog = WarningDialog(self)
@@ -192,6 +193,40 @@ class CalculusWindow(Gtk.ApplicationWindow):
     def _copy_result_latex_code(self, action, param, user_data):
 
         self.clipboard.set_text(self.sympy_handler.get_last_result_as_full_latex(), -1)
+
+
+    def _export_result_as_png(self, action, param, user_data):
+
+        if not self.sympy_handler.is_result_ready():
+            return
+
+        file_chooser = Gtk.FileChooserDialog(
+            title="Export result as PNG",
+            parent=self,
+            action=Gtk.FileChooserAction.SAVE,
+            do_overwrite_confirmation=True,
+            buttons=(
+                Gtk.STOCK_CANCEL,
+                Gtk.ResponseType.CANCEL,
+                Gtk.STOCK_SAVE,
+                Gtk.ResponseType.ACCEPT
+            )
+        )
+        file_chooser.set_current_name('result.png')
+        response = file_chooser.run()
+
+        try:
+
+            if response == Gtk.ResponseType.ACCEPT:
+
+                filename = file_chooser.get_filename()
+                print(filename)
+                Plots.save_file_with_result(self._get_formatted_result(), filename)
+
+        except ValueError:
+            GLib.idle_add(self.warning_dialog.show, _('Displaying result error'))
+        finally:
+            file_chooser.destroy()
 
 
     def _get_formatted_result(self):

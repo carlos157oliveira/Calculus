@@ -103,3 +103,6 @@ msgstr "Ver resultado numa janela separada"
 msgid "Copy LaTeX code"
 msgstr "Copiar código LaTeX"
 
+msgid "Export result as PNG"
+msgstr "Exportar resultado como PNG"
+

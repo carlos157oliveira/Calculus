@@ -80,3 +80,38 @@ class Plots:
             verticalalignment='center')
 
         plt.show()
+
+    def save_file_with_result(txt, filename):
+
+        # dependency on LaTeX wasn't successfully configured
+        # rcParams['text.usetex'] = True
+
+        # old fixed size
+        #plt.figure(figsize=(4,0.75))
+
+        # make sure no image is in matplotlib's buffer
+        plt.close()
+
+        # Take figure's dpi and calculate size in inches through text size in pixels
+        fig = plt.figure()
+        dpi = fig.dpi
+        r = fig.canvas.get_renderer()
+        plt.axis('off')
+
+        textimage = plt.text(
+            0.5,
+            0.5,
+            txt,
+            fontsize=30,
+            horizontalalignment='center',
+            verticalalignment='center')
+
+        bb = textimage.get_window_extent(renderer=r)
+
+        # We multiply by a correction factor of 1.025 to have a little margin
+        # Experience showed width is cropped the larger it is without the factor
+        width_inches = bb.width * 1.025 / dpi
+        height_inches = bb.height * 1.025 / dpi
+        fig.set_size_inches(width_inches, height_inches)
+
+        plt.savefig(filename, format='png')
