@@ -28,7 +28,7 @@ class WarningDialog(Gtk.Dialog):
     def __init__(self, parent_widget, **kwargs):
 
         super().__init__(
-            buttons=(Gtk.STOCK_OK, Gtk.ResponseType.OK),
+            #buttons=(Gtk.STOCK_OK, Gtk.ResponseType.OK),
             transient_for=parent_widget,
             **kwargs)
 
