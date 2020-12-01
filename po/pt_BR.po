@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 23:43-0300\n"
+"POT-Creation-Date: 2020-12-01 13:50-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,12 @@ msgstr "Error de sintaxe"
 
 #: .././calculus/ui/calculus_window.py:146
 #: .././calculus/ui/calculus_window.py:198
-#: .././calculus/ui/calculus_window.py:235
-msgid "Displaying result error"
-msgstr "Erro ao mostrar resultado"
+msgid ""
+"Matplotlib is unable to render the output.\n"
+"You can still export the output as LaTeX in the menu."
+msgstr ""
+"Matplotlib não é capaz de renderizar o resultado.\n"
+"Ainda se pode exportá-lo como LaTeX no menu."
 
 #: .././calculus/ui/calculus_window.py:169
 msgid "One or more symbols aren't defined"
@@ -40,6 +43,10 @@ msgstr "As expressões devem ser univariável"
 #: .././calculus/ui/calculus_window.py:180
 msgid "No input data"
 msgstr "Sem dados de entrada"
+
+#: .././calculus/ui/calculus_window.py:235
+msgid "Displaying result error"
+msgstr "Erro ao mostrar resultado"
 
 #: .././calculus/ui/plot_window.py:49
 msgid "The interval must be numeric"

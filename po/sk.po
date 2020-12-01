@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 23:43-0300\n"
+"POT-Creation-Date: 2020-12-01 13:50-0300\n"
 "PO-Revision-Date: 2020-10-25 HO:MI+ZONE\n"
 "Last-Translator: martin-sk\n"
 "Language-Team: https://github.com/martin-sk\n"
@@ -25,8 +25,9 @@ msgstr "Chyba syntaxu"
 
 #: .././calculus/ui/calculus_window.py:146
 #: .././calculus/ui/calculus_window.py:198
-#: .././calculus/ui/calculus_window.py:235
-msgid "Displaying result error"
+msgid ""
+"Matplotlib is unable to render the output.\n"
+"You can still export the output as LaTeX in the menu."
 msgstr ""
 
 #: .././calculus/ui/calculus_window.py:169
@@ -40,6 +41,10 @@ msgstr "Výrazy musia byť nemenné"
 #: .././calculus/ui/calculus_window.py:180
 msgid "No input data"
 msgstr "Žiadne vstupné dáta"
+
+#: .././calculus/ui/calculus_window.py:235
+msgid "Displaying result error"
+msgstr ""
 
 #: .././calculus/ui/plot_window.py:49
 msgid "The interval must be numeric"
