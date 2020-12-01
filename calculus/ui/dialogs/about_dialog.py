@@ -6,3 +6,4 @@ class AboutDialog(Gtk.AboutDialog):
 
     def __init__(self):
         super().__init__()
+        self.add_credit_section('Usability and testing by', ('John Blommers',))

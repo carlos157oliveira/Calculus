@@ -9,16 +9,29 @@
     <property name="program-name">Calculus</property>
     <property name="version">@version@</property>
     <property name="comments" translatable="yes">
-Differentiate and integrate expressions;
-Export as LaTeX or PNG;
-Plot the result and original expression to see numerical behavior.
-
+Solve simple calculus exercises involving differentiation and integration!
 Made with GTK, SymPy, Matplotlib and NumPy.
 </property>
     <property name="website">@package_url@</property>
     <property name="website-label" translatable="yes">Calculus Website</property>
     <property name="authors">Carlos</property>
-    <property name="logo_icon_name">@app_id@</property>
+    <property name="translator-credits">Albano Battistella</property>
+    <property name="logo-icon-name">@app_id@</property>
     <property name="license-type">gpl-3-0</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
   </template>
 </interface>
