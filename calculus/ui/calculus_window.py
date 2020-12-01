@@ -143,7 +143,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
         try:
             result_data = Plots.get_buffer_with_text(txt, self.resultColor)
         except ValueError:
-            conn.send(Result(True, _('Displaying result error'), self.sympy_handler))
+            conn.send(Result(True, _('Matplotlib is unable to render the output.\nYou can still export the output as LaTeX in the menu.'), self.sympy_handler))
             return
 
         conn.send(Result(False, result_data, self.sympy_handler))
@@ -195,7 +195,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
         try:
             Plots.open_result_in_external_viewer(txt)
         except ValueError:
-            self.warning_dialog.show(_('Displaying result error'))
+            self.warning_dialog.show(_('Matplotlib is unable to render the output.\nYou can still export the output as LaTeX in the menu.'))
 
 
     def _copy_result_latex_code(self, action, param, user_data):
