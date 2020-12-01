@@ -68,7 +68,8 @@ gnome.compile_resources(PROJECT_RDNN_NAME,
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
-  source_dir: meson.current_build_dir()
+  source_dir: meson.current_build_dir(),
+  dependencies: about_dialog
 )
 
 # Installing the default icon

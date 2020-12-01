@@ -18,5 +18,12 @@
         <attribute name="icon">document-save</attribute>
       </item>
     </section>
+    <section>
+      <attribute name="label" translatable="yes">About</attribute>
+      <item>
+        <attribute name="label" translatable="yes">About</attribute>
+        <attribute name="action">win.open_about_dialog</attribute>
+      </item>
+    </section>
   </menu>
 </interface>

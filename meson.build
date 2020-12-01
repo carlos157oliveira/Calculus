@@ -16,6 +16,7 @@ PACKAGE_URL_BUG = 'https://github.com/carlos157oliveira/Calculus/issues'
 # dependency('latex-base')
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 
+subdir('data/ui/dialogs')
 subdir('data')
 
 python = import('python')
@@ -44,4 +45,3 @@ install_subdir('calculus', install_dir: pkgdatadir)
 subdir('po')
 
 meson.add_install_script('build-aux/meson/postinstall.py')
-

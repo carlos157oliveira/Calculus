@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/com/github/carlos157oliveira/Calculus">
-    <file>ui/calculus_window.ui</file>
-    <file>ui/plot_window.ui</file>
-    <file>ui/dialogs/warning_dialog.ui</file>
-    <file>ui/menu.ui</file>
+    <file preprocess="xml-stripblanks">ui/dialogs/about_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/calculus_window.ui</file>
+    <file preprocess="xml-stripblanks">ui/plot_window.ui</file>
+    <file preprocess="xml-stripblanks">ui/dialogs/warning_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/menu.ui</file>
     <file>style.css</file>
   </gresource>
 </gresources>

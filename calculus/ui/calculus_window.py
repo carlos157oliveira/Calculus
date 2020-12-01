@@ -21,6 +21,7 @@ from ..utils.plots import Plots
 from ..utils.sympy_handler import SympyHandler
 from .plot_window import PlotWindow
 from .dialogs.warning_dialog import WarningDialog
+from .dialogs.about_dialog import AboutDialog
 
 import multiprocessing
 import numpy as np
@@ -54,7 +55,8 @@ class CalculusWindow(Gtk.ApplicationWindow):
         self.add_action_entries([
             ['open_result_in_separate_window', self._open_result_in_separate_window, None, None, None],
             ['copy_result_latex_code', self._copy_result_latex_code, None, None, None],
-            ['export_result_as_png', self._export_result_as_png, None, None, None]
+            ['export_result_as_png', self._export_result_as_png, None, None, None],
+            ['open_about_dialog', self._open_about_dialog, None, None, None]
         ])
 
         self.warning_dialog = WarningDialog(self)
@@ -178,6 +180,12 @@ class CalculusWindow(Gtk.ApplicationWindow):
             self.warning_dialog.show(_('No input data'))
 
 
+    def _get_formatted_result(self):
+        txt = self.sympy_handler.get_last_result_as_latex()
+        txt = '{0}{1}{0}'.format('$', txt)
+        return txt
+
+
     def _open_result_in_separate_window(self, action, param, user_data):
 
         if not self.sympy_handler.is_result_ready():
@@ -229,10 +237,9 @@ class CalculusWindow(Gtk.ApplicationWindow):
             file_chooser.destroy()
 
 
-    def _get_formatted_result(self):
-        txt = self.sympy_handler.get_last_result_as_latex()
-        txt = '{0}{1}{0}'.format('$', txt)
-        return txt
+    def _open_about_dialog(self, action, param, user_data):
+        about_dialog = AboutDialog()
+        about_dialog.present()
 
 
 class Result:
