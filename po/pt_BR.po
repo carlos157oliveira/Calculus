@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 14:37-0300\n"
+"POT-Creation-Date: 2020-12-01 14:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,10 @@ msgstr "Sem dados de entrada"
 #: .././calculus/ui/calculus_window.py:235
 msgid "Displaying result error"
 msgstr "Erro ao mostrar resultado"
+
+#: .././calculus/ui/dialogs/about_dialog.py:9
+msgid "Usability and testing by"
+msgstr "Usabilidade e testes por"
 
 #: .././calculus/ui/plot_window.py:49
 msgid "The interval must be numeric"
@@ -138,7 +142,8 @@ msgid ""
 "\n"
 "Solve simple calculus exercises involving differentiation and integration!\n"
 "Made with GTK, SymPy, Matplotlib and NumPy.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "Resolva simples exercícios de Cálculo Diferencial e Integral!\n"
 "Feito com GTK, SymPy, Matplotlib e NumPy.\n"
 
