@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 13:50-0300\n"
+"POT-Creation-Date: 2020-12-01 14:37-0300\n"
 "PO-Revision-Date: 2020-10-06 21:07+0200\n"
 "Last-Translator: ALBANO BATTISTELLA <albano_battistella@hotmail.com>\n"
 "Language-Team: ITALIAN <LL@li.org>\n"
@@ -130,3 +130,14 @@ msgstr "Colore 2"
 #: .././data/ui/plot_window.ui.h:6
 msgid "Cancel"
 msgstr "Cancella"
+
+#: .././data/ui/dialogs/about_dialog.ui.in.h:1
+msgid ""
+"\n"
+"Solve simple calculus exercises involving differentiation and integration!\n"
+"Made with GTK, SymPy, Matplotlib and NumPy.\n"
+msgstr ""
+
+#: .././data/ui/dialogs/about_dialog.ui.in.h:5
+msgid "Calculus Website"
+msgstr ""

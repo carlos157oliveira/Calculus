@@ -1,4 +1,4 @@
-# created on Tue 01 Dec 2020 02:41:10 AM UTC
+# created on Tue 01 Dec 2020 05:37:14 PM UTC
 
 ./calculus/__init__.py
 ./calculus/main.py
@@ -13,3 +13,4 @@
 [type: gettext/glade]./data/ui/dialogs/warning_dialog.ui
 [type: gettext/glade]./data/ui/menu.ui
 [type: gettext/glade]./data/ui/plot_window.ui
+[type: gettext/glade]./data/ui/dialogs/about_dialog.ui.in
