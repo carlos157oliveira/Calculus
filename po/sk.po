@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-18 20:44+0200\n"
+"POT-Creation-Date: 2020-11-30 23:43-0300\n"
 "PO-Revision-Date: 2020-10-25 HO:MI+ZONE\n"
 "Last-Translator: martin-sk\n"
 "Language-Team: https://github.com/martin-sk\n"
@@ -11,84 +11,117 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: calculus/ui/calculus_window.py
-
-msgid "No input data"
-msgstr "Žiadne vstupné dáta"
-
-msgid "Expressions must be univariable"
-msgstr "Výrazy musia byť nemenné"
-
+#: .././calculus/ui/calculus_window.py:122
 msgid "Input operand"
 msgstr "Vstupný operand"
 
+#: .././calculus/ui/calculus_window.py:126
 msgid "Input operation variable"
 msgstr "Vstupná operačná premenná"
 
+#: .././calculus/ui/calculus_window.py:133
 msgid "Syntax error"
 msgstr "Chyba syntaxu"
 
-#: data/ui/calculus_window.ui
+#: .././calculus/ui/calculus_window.py:146
+#: .././calculus/ui/calculus_window.py:198
+#: .././calculus/ui/calculus_window.py:235
+msgid "Displaying result error"
+msgstr ""
 
-msgid "Differential and Integral Calculator"
-msgstr "Diferenciálna a integrálna kalkulačka"
-
-msgid "Operation variable"
-msgstr "Premenná operácie"
-
-msgid "Differentiate"
-msgstr "Diferenciácia"
-
-msgid "Integrate"
-msgstr "Integrácia"
-
-msgid "Operate"
-msgstr "Oparácia"
-
-#: data/ui/calculus_window.ui data/ui/plot_window.ui
-msgid "Plot"
-msgstr "Vykresliť"
-
-#: data/ui/plot_window.ui
-
-msgid "Graphics"
-msgstr "Grafika"
-
-msgid "Inferior limit"
-msgstr "Dolná hranica"
-
-msgid "Superior limit"
-msgstr "Horná hranica"
-
-msgid "Color 1"
-msgstr "Farba 1"
-
-msgid "Color 2"
-msgstr "Farba 2"
-
-msgid "Cancel"
-msgstr "Zrušiť"
-
-#: calculus/ui/plot_window.py
-
-msgid "The interval must be numeric"
-msgstr "Interval musí byť číselný"
-
-msgid "Original Expression and Result"
-msgstr "Pôvodný výraz a výsledok"
-
-msgid "Original"
-msgstr "Pôvodný"
-
+#: .././calculus/ui/calculus_window.py:169
 msgid "One or more symbols aren't defined"
 msgstr "Jeden alebo viac symbolov nie je definovaných"
 
-#: data/ui/calculus_window.ui calculus/ui/plot_window.py
+#: .././calculus/ui/calculus_window.py:177
+msgid "Expressions must be univariable"
+msgstr "Výrazy musia byť nemenné"
 
+#: .././calculus/ui/calculus_window.py:180
+msgid "No input data"
+msgstr "Žiadne vstupné dáta"
+
+#: .././calculus/ui/plot_window.py:49
+msgid "The interval must be numeric"
+msgstr "Interval musí byť číselný"
+
+#: .././calculus/ui/plot_window.py:59
+msgid "Original Expression and Result"
+msgstr "Pôvodný výraz a výsledok"
+
+#: .././calculus/ui/plot_window.py:62
+msgid "Original"
+msgstr "Pôvodný"
+
+#: .././calculus/ui/plot_window.py:62 .././data/ui/calculus_window.ui.h:1
+#: .././data/ui/menu.ui.h:1
 msgid "Result"
 msgstr "Výsledok"
 
-#: calculus/utils/dialogs.py
+#: .././data/ui/calculus_window.ui.h:2
+msgid "Operation variable"
+msgstr "Premenná operácie"
 
+#: .././data/ui/calculus_window.ui.h:3
+msgid "Differentiate"
+msgstr "Diferenciácia"
+
+#: .././data/ui/calculus_window.ui.h:4
+msgid "Integrate"
+msgstr "Integrácia"
+
+#: .././data/ui/calculus_window.ui.h:5
+msgid "Operate"
+msgstr "Oparácia"
+
+#: .././data/ui/calculus_window.ui.h:6 .././data/ui/plot_window.ui.h:7
+msgid "Plot"
+msgstr "Vykresliť"
+
+#: .././data/ui/calculus_window.ui.h:7
+msgid "Differential and Integral Calculator"
+msgstr "Diferenciálna a integrálna kalkulačka"
+
+#: .././data/ui/dialogs/warning_dialog.ui.h:1
 msgid "Warning"
 msgstr "Upozornenie"
+
+#: .././data/ui/menu.ui.h:2
+msgid "Open result in separate window"
+msgstr ""
+
+#: .././data/ui/menu.ui.h:3
+msgid "Copy LaTeX code"
+msgstr ""
+
+#: .././data/ui/menu.ui.h:4
+msgid "Export result as PNG"
+msgstr ""
+
+#: .././data/ui/menu.ui.h:5
+msgid "About"
+msgstr ""
+
+#: .././data/ui/plot_window.ui.h:1
+msgid "Graphics"
+msgstr "Grafika"
+
+#: .././data/ui/plot_window.ui.h:2
+msgid "Inferior limit"
+msgstr "Dolná hranica"
+
+#: .././data/ui/plot_window.ui.h:3
+msgid "Superior limit"
+msgstr "Horná hranica"
+
+#: .././data/ui/plot_window.ui.h:4
+msgid "Color 1"
+msgstr "Farba 1"
+
+#: .././data/ui/plot_window.ui.h:5
+msgid "Color 2"
+msgstr "Farba 2"
+
+#: .././data/ui/plot_window.ui.h:6
+msgid "Cancel"
+msgstr "Zrušiť"

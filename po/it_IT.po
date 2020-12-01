@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-18 20:44+0200\n"
+"POT-Creation-Date: 2020-11-30 23:43-0300\n"
 "PO-Revision-Date: 2020-10-06 21:07+0200\n"
 "Last-Translator: ALBANO BATTISTELLA <albano_battistella@hotmail.com>\n"
 "Language-Team: ITALIAN <LL@li.org>\n"
@@ -11,83 +11,117 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: calculus/ui/calculus_window.py
-
-msgid "No input data"
-msgstr "Nessun dato di input"
-
-msgid "Expressions must be univariable"
-msgstr "Le espressioni devono essere univariabili"
-
+#: .././calculus/ui/calculus_window.py:122
 msgid "Input operand"
 msgstr "Operando di input"
 
+#: .././calculus/ui/calculus_window.py:126
 msgid "Input operation variable"
 msgstr "Variabile di operazione di input"
 
+#: .././calculus/ui/calculus_window.py:133
 msgid "Syntax error"
 msgstr "Errore di sintassi"
 
-#: data/ui/calculus_window.ui
+#: .././calculus/ui/calculus_window.py:146
+#: .././calculus/ui/calculus_window.py:198
+#: .././calculus/ui/calculus_window.py:235
+msgid "Displaying result error"
+msgstr ""
 
-msgid "Differential and Integral Calculator"
-msgstr "Calcolatrice differenziale e integrale"
-
-msgid "Operation variable"
-msgstr "Variabile di operazione"
-
-msgid "Differentiate"
-msgstr "Differenziare"
-
-msgid "Integrate"
-msgstr "Integrare"
-
-msgid "Operate"
-msgstr "Operar"
-
-#: data/ui/window.ui data/ui/plot_window.ui
-msgid "Plot"
-msgstr "Traccia"
-
-#: data/ui/plot_window.ui
-msgid "Graphics"
-msgstr "Grafica"
-
-msgid "Inferior limit"
-msgstr "Limite inferiore"
-
-msgid "Superior limit"
-msgstr "Limite superiore"
-
-msgid "Color 1"
-msgstr "Colore 1"
-
-msgid "Color 2"
-msgstr "Colore 2"
-
-msgid "Cancel"
-msgstr "Cancella"
-
-#: calculus/ui/plot_window.py
-
-msgid "The interval must be numeric"
-msgstr "L'intervallo deve essere numerico"
-
-msgid "Original Expression and Result"
-msgstr "Espressione Originale e Risultato"
-
-msgid "Original"
-msgstr "Originale"
-
+#: .././calculus/ui/calculus_window.py:169
 msgid "One or more symbols aren't defined"
 msgstr "Uno o più simboli non sono definiti"
 
-#: data/ui/calculus_window.ui calculus/ui/plot_window.py
+#: .././calculus/ui/calculus_window.py:177
+msgid "Expressions must be univariable"
+msgstr "Le espressioni devono essere univariabili"
 
+#: .././calculus/ui/calculus_window.py:180
+msgid "No input data"
+msgstr "Nessun dato di input"
+
+#: .././calculus/ui/plot_window.py:49
+msgid "The interval must be numeric"
+msgstr "L'intervallo deve essere numerico"
+
+#: .././calculus/ui/plot_window.py:59
+msgid "Original Expression and Result"
+msgstr "Espressione Originale e Risultato"
+
+#: .././calculus/ui/plot_window.py:62
+msgid "Original"
+msgstr "Originale"
+
+#: .././calculus/ui/plot_window.py:62 .././data/ui/calculus_window.ui.h:1
+#: .././data/ui/menu.ui.h:1
 msgid "Result"
 msgstr "Resultato"
 
-#: calculus/utils/dialogs.py
+#: .././data/ui/calculus_window.ui.h:2
+msgid "Operation variable"
+msgstr "Variabile di operazione"
 
+#: .././data/ui/calculus_window.ui.h:3
+msgid "Differentiate"
+msgstr "Differenziare"
+
+#: .././data/ui/calculus_window.ui.h:4
+msgid "Integrate"
+msgstr "Integrare"
+
+#: .././data/ui/calculus_window.ui.h:5
+msgid "Operate"
+msgstr "Operar"
+
+#: .././data/ui/calculus_window.ui.h:6 .././data/ui/plot_window.ui.h:7
+msgid "Plot"
+msgstr "Traccia"
+
+#: .././data/ui/calculus_window.ui.h:7
+msgid "Differential and Integral Calculator"
+msgstr "Calcolatrice differenziale e integrale"
+
+#: .././data/ui/dialogs/warning_dialog.ui.h:1
 msgid "Warning"
 msgstr "Avviso"
+
+#: .././data/ui/menu.ui.h:2
+msgid "Open result in separate window"
+msgstr ""
+
+#: .././data/ui/menu.ui.h:3
+msgid "Copy LaTeX code"
+msgstr ""
+
+#: .././data/ui/menu.ui.h:4
+msgid "Export result as PNG"
+msgstr ""
+
+#: .././data/ui/menu.ui.h:5
+msgid "About"
+msgstr ""
+
+#: .././data/ui/plot_window.ui.h:1
+msgid "Graphics"
+msgstr "Grafica"
+
+#: .././data/ui/plot_window.ui.h:2
+msgid "Inferior limit"
+msgstr "Limite inferiore"
+
+#: .././data/ui/plot_window.ui.h:3
+msgid "Superior limit"
+msgstr "Limite superiore"
+
+#: .././data/ui/plot_window.ui.h:4
+msgid "Color 1"
+msgstr "Colore 1"
+
+#: .././data/ui/plot_window.ui.h:5
+msgid "Color 2"
+msgstr "Colore 2"
+
+#: .././data/ui/plot_window.ui.h:6
+msgid "Cancel"
+msgstr "Cancella"
