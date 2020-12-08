@@ -14,8 +14,12 @@ Made with GTK, SymPy, Matplotlib and NumPy.
 </property>
     <property name="website">@package_url@</property>
     <property name="website-label" translatable="yes">Calculus Website</property>
-    <property name="authors">Carlos</property>
-    <property name="translator-credits">Albano Battistella</property>
+    <property name="authors">Carlos Eduardo de Oliveira</property>
+    <property name="translator-credits">Albano Battistella (italian)
+Juliana de Oliveira Brasilio (spanish)
+martin-sk (slovakian)
+Carlos Eduardo de Oliveira (portuguese)
+</property>
     <property name="logo-icon-name">@app_id@</property>
     <property name="license-type">gpl-3-0</property>
     <child internal-child="vbox">
