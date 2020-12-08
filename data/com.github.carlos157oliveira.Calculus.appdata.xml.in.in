@@ -42,6 +42,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.5.1" date="2020-12-08">
+      <description>
+        <p>New feature:</p>
+        <ul>
+          <li>Added About dialog.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.5.0" date="2020-11-29">
       <description>
         <p>New feature:</p>
