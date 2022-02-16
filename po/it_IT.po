@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-01 14:58-0300\n"
-"PO-Revision-Date: 2020-10-06 21:07+0200\n"
+"PO-Revision-Date: 2022-02-16 19:07+0100\n"
 "Last-Translator: ALBANO BATTISTELLA <albano_battistella@hotmail.com>\n"
 "Language-Team: ITALIAN <LL@li.org>\n"
 "Language: it_IT\n"
@@ -29,6 +29,8 @@ msgid ""
 "Matplotlib is unable to render the output.\n"
 "You can still export the output as LaTeX in the menu."
 msgstr ""
+"Matplotlib non è in grado di eseguire il rendering dell'output.\n"
+"Puoi ancora esportare l'output come LaTeX nel menu."
 
 #: .././calculus/ui/calculus_window.py:169
 msgid "One or more symbols aren't defined"
@@ -44,11 +46,11 @@ msgstr "Nessun dato di input"
 
 #: .././calculus/ui/calculus_window.py:235
 msgid "Displaying result error"
-msgstr ""
+msgstr "Visualizzazione errore risultato"
 
 #: .././calculus/ui/dialogs/about_dialog.py:9
 msgid "Usability and testing by"
-msgstr ""
+msgstr "Usabilità e test di"
 
 #: .././calculus/ui/plot_window.py:49
 msgid "The interval must be numeric"
@@ -97,19 +99,19 @@ msgstr "Avviso"
 
 #: .././data/ui/menu.ui.h:2
 msgid "Open result in separate window"
-msgstr ""
+msgstr "Apri il risultato in una finestra separata"
 
 #: .././data/ui/menu.ui.h:3
 msgid "Copy LaTeX code"
-msgstr ""
+msgstr "Copia il codice LaTeX"
 
 #: .././data/ui/menu.ui.h:4
 msgid "Export result as PNG"
-msgstr ""
+msgstr "Esporta risultato in formato PNG"
 
 #: .././data/ui/menu.ui.h:5
 msgid "About"
-msgstr ""
+msgstr "Informazioni"
 
 #: .././data/ui/plot_window.ui.h:1
 msgid "Graphics"
@@ -141,7 +143,9 @@ msgid ""
 "Solve simple calculus exercises involving differentiation and integration!\n"
 "Made with GTK, SymPy, Matplotlib and NumPy.\n"
 msgstr ""
+"Risolvi semplici esercizi di calcolo che coinvolgono differenziazione e integrazione!\n"
+"Realizzato con GTK, SymPy, Matplotlib e NumPy.\n"
 
 #: .././data/ui/dialogs/about_dialog.ui.in.h:5
 msgid "Calculus Website"
-msgstr ""
+msgstr "Sito Web di Calculus"
