@@ -1,16 +1,22 @@
-# created on Tue 01 Dec 2020 05:37:14 PM UTC
+# Find translatable python files
+# find ./ -type f -name "*.py" -exec grep -l "_(\"" {} + | sort
 
-./calculus/__init__.py
-./calculus/main.py
 ./calculus/ui/calculus_window.py
 ./calculus/ui/dialogs/about_dialog.py
-./calculus/ui/dialogs/warning_dialog.py
 ./calculus/ui/plot_window.py
 ./calculus/utils/dialogs.py
-./calculus/utils/plots.py
-./calculus/utils/sympy_handler.py
-[type: gettext/glade]./data/ui/calculus_window.ui
-[type: gettext/glade]./data/ui/dialogs/warning_dialog.ui
-[type: gettext/glade]./data/ui/menu.ui
-[type: gettext/glade]./data/ui/plot_window.ui
-[type: gettext/glade]./data/ui/dialogs/about_dialog.ui.in
+
+# Find translatable ui files
+# find ./ -type f -name "*.ui" -exec grep -l "translatable=" {} + | sort
+
+./data/ui/calculus_window.ui
+./data/ui/dialogs/warning_dialog.ui
+./data/ui/menu.ui
+./data/ui/plot_window.ui
+
+# Find translatable data files
+# find ./data/ -type f -name "*.in" | sort --reverse
+
+./data/ui/dialogs/about_dialog.ui.in
+./data/com.github.carlos157oliveira.Calculus.desktop.in.in
+./data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in
