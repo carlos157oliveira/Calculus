@@ -18,6 +18,7 @@ Made with GTK, SymPy, Matplotlib and NumPy.</property>
 Juliana de Oliveira Brasilio (spanish)
 martin-sk (slovakian)
 Carlos Eduardo de Oliveira (portuguese)
+Sabri Ünal (turkish)
 </property>
     <property name="logo-icon-name">@app_id@</property>
     <property name="license-type">gpl-3-0</property>

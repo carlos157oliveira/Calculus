@@ -1,0 +1,200 @@
+# Turkish translation for Calculus.
+# Copyright (C) 2024 Calculus's copyright holder
+# This file is distributed under the same license as the Calculus package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Calculus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-07 01:43+0300\n"
+"PO-Revision-Date: 2024-02-07 01:46+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish <takim@gnome.org.tr>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: calculus/ui/calculus_window.py:122
+msgid "Input operand"
+msgstr "Girdi terimi"
+
+#: calculus/ui/calculus_window.py:126
+msgid "Input operation variable"
+msgstr "Giriş işlem değişkeni"
+
+#: calculus/ui/calculus_window.py:133
+msgid "Syntax error"
+msgstr "Sözdizimi hatası"
+
+#: calculus/ui/calculus_window.py:146 calculus/ui/calculus_window.py:198
+msgid ""
+"Matplotlib is unable to render the output.\n"
+"You can still export the output as LaTeX in the menu."
+msgstr ""
+"Matplotlib çıktıyı oluşturamadı.\n"
+"Çıktıyı yine de menüde LaTeX olarak dışa aktarabilirsiniz."
+
+#: calculus/ui/calculus_window.py:169
+msgid "One or more symbols aren't defined"
+msgstr "Bir veya daha fazla sembol tanımlanmamış"
+
+#: calculus/ui/calculus_window.py:177
+msgid "Expressions must be univariable"
+msgstr "İfadeler tek değişkenli olmalıdır"
+
+#: calculus/ui/calculus_window.py:180
+msgid "No input data"
+msgstr "Girdi verisi yok"
+
+#: calculus/ui/calculus_window.py:212 data/ui/menu.ui:16
+msgid "Export result as PNG"
+msgstr "Sonucu PNG olarak dışa aktar"
+
+#: calculus/ui/calculus_window.py:223
+msgid "result.png"
+msgstr "sonuç.png"
+
+#: calculus/ui/calculus_window.py:235
+msgid "Displaying result error"
+msgstr "Sonuç hatası görüntüleniyor"
+
+#: calculus/ui/dialogs/about_dialog.py:9
+msgid "Usability and testing by"
+msgstr "Kullanılabilirlik ve test"
+
+#: calculus/ui/plot_window.py:49
+msgid "The interval must be numeric"
+msgstr "Aralık sayısal olmalıdır"
+
+#: calculus/ui/plot_window.py:59
+msgid "Original Expression and Result"
+msgstr "Özgün İfade ve Sonuç"
+
+#: calculus/ui/plot_window.py:62
+msgid "Original"
+msgstr "Özgün"
+
+#: calculus/ui/plot_window.py:62 data/ui/calculus_window.ui:26
+#: data/ui/menu.ui:4
+msgid "Result"
+msgstr "Sonuç"
+
+#: data/ui/calculus_window.ui:94
+msgid "Operation variable"
+msgstr "Operasyon değişkeni"
+
+#: data/ui/calculus_window.ui:145
+msgid "Differentiate"
+msgstr "Farklılaştır"
+
+#: data/ui/calculus_window.ui:160
+msgid "Integrate"
+msgstr "Bütünleştir"
+
+#: data/ui/calculus_window.ui:187
+msgid "Operate"
+msgstr "Çalıştır"
+
+#: data/ui/calculus_window.ui:215 data/ui/plot_window.ui:119
+msgid "Plot"
+msgstr "Grafik"
+
+#: data/ui/calculus_window.ui:240
+msgid "Differential and Integral Calculator"
+msgstr "Diferansiyel ve İntegral Hesap Makinesi"
+
+#: data/ui/dialogs/warning_dialog.ui:7
+msgid "Warning"
+msgstr "Uyarı"
+
+#: data/ui/menu.ui:6
+msgid "Open result in separate window"
+msgstr "Sonucu ayrı pencerede aç"
+
+#: data/ui/menu.ui:11
+msgid "Copy LaTeX code"
+msgstr "LaTeX kodunu kopyala"
+
+#: data/ui/menu.ui:22 data/ui/menu.ui:24
+msgid "About"
+msgstr "Hakkında"
+
+#: data/ui/plot_window.ui:6
+msgid "Graphics"
+msgstr "Grafikler"
+
+#: data/ui/plot_window.ui:23
+msgid "Inferior limit"
+msgstr "Alt sınır"
+
+#: data/ui/plot_window.ui:44
+msgid "Superior limit"
+msgstr "Üst limit"
+
+#: data/ui/plot_window.ui:65
+msgid "Color 1"
+msgstr "1. Renk"
+
+#: data/ui/plot_window.ui:87
+msgid "Color 2"
+msgstr "2. Renk"
+
+#: data/ui/plot_window.ui:108
+msgid "Cancel"
+msgstr "İptal"
+
+#: data/ui/dialogs/about_dialog.ui.in:11
+msgid ""
+"\n"
+"Solve simple calculus exercises involving differentiation and integration!\n"
+"Made with GTK, SymPy, Matplotlib and NumPy."
+msgstr ""
+"\n"
+"Türev ve integrali içeren basit matematik alıştırmalarını çözün!\n"
+"GTK, SymPy, Matplotlib ve NumPy ile yapılmıştır."
+
+#: data/ui/dialogs/about_dialog.ui.in:15
+msgid "Calculus Website"
+msgstr "Calculus Web Sitesi"
+
+#: data/com.github.carlos157oliveira.Calculus.desktop.in.in:3
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:14
+msgid "Calculus"
+msgstr "Calculus"
+
+#: data/com.github.carlos157oliveira.Calculus.desktop.in.in:4
+msgid "Compute derivatives and integrals, besides plotting them"
+msgstr "Türevleri ve integralleri hesaplamanın yanı sıra çizimlerini de yapın"
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:15
+msgid "Compute derivatives and integrals"
+msgstr "Türevleri ve integralleri hesaplayın"
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:17
+msgid "A practical tool to foresee the result of calculus exercises."
+msgstr "Matematik denemelerin sonucunu öngörmek için pratik bir araç."
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:19
+msgid "Compute derivatives"
+msgstr "Türevleri hesapla"
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:20
+msgid "Compute integrals"
+msgstr "İntegralleri hesaplama"
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:21
+msgid "Plot the original expression and result within a given range"
+msgstr "Özgün ifadeyi ve sonucu belirli bir aralıkta çiz"
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:23
+msgid ""
+"If you are interested, open an issue in github to update a translation or "
+"make a pull request."
+msgstr ""
+"Eğer ilgileniyorsanız, çevirileri güncellemek  ya da çekme isteğinde "
+"bulunmak için github'da konu açın."
