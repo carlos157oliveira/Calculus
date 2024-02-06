@@ -10,8 +10,7 @@
     <property name="version">@version@</property>
     <property name="comments" translatable="yes">
 Solve simple calculus exercises involving differentiation and integration!
-Made with GTK, SymPy, Matplotlib and NumPy.
-</property>
+Made with GTK, SymPy, Matplotlib and NumPy.</property>
     <property name="website">@package_url@</property>
     <property name="website-label" translatable="yes">Calculus Website</property>
     <property name="authors">Carlos Eduardo de Oliveira</property>

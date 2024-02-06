@@ -46,7 +46,7 @@ class PlotWindow(Gtk.ApplicationWindow):
             limsup = float(self.limsupEntry.get_text())
             liminf = float(self.liminfEntry.get_text())
         except ValueError:
-            self.warning_dialog.show(_('The interval must be numeric'))
+            self.warning_dialog.show(_("The interval must be numeric"))
             return
 
 
@@ -56,10 +56,10 @@ class PlotWindow(Gtk.ApplicationWindow):
         color1 = (color1.red, color1.green, color1.blue)
         color2 = (color2.red, color2.green, color2.blue)
 
-        Plots.n_subplots(_('Original Expression and Result'),
+        Plots.n_subplots(_("Original Expression and Result"),
                                 (liminf, limsup),
                                 (self.f1, self.f2),
-                                (_('Original'), _('Result')),
+                                (_("Original"), _("Result")),
                                 (color1, color2))
 
         self.close()
