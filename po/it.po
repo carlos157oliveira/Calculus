@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 14:58-0300\n"
+"POT-Creation-Date: 2024-02-07 01:43+0300\n"
 "PO-Revision-Date: 2022-02-16 19:07+0100\n"
 "Last-Translator: ALBANO BATTISTELLA <albano_battistella@hotmail.com>\n"
 "Language-Team: ITALIAN <LL@li.org>\n"
@@ -11,20 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .././calculus/ui/calculus_window.py:122
+#: calculus/ui/calculus_window.py:122
 msgid "Input operand"
 msgstr "Operando di input"
 
-#: .././calculus/ui/calculus_window.py:126
+#: calculus/ui/calculus_window.py:126
 msgid "Input operation variable"
 msgstr "Variabile di operazione di input"
 
-#: .././calculus/ui/calculus_window.py:133
+#: calculus/ui/calculus_window.py:133
 msgid "Syntax error"
 msgstr "Errore di sintassi"
 
-#: .././calculus/ui/calculus_window.py:146
-#: .././calculus/ui/calculus_window.py:198
+#: calculus/ui/calculus_window.py:146 calculus/ui/calculus_window.py:198
 msgid ""
 "Matplotlib is unable to render the output.\n"
 "You can still export the output as LaTeX in the menu."
@@ -32,120 +31,164 @@ msgstr ""
 "Matplotlib non è in grado di eseguire il rendering dell'output.\n"
 "Puoi ancora esportare l'output come LaTeX nel menu."
 
-#: .././calculus/ui/calculus_window.py:169
+#: calculus/ui/calculus_window.py:169
 msgid "One or more symbols aren't defined"
 msgstr "Uno o più simboli non sono definiti"
 
-#: .././calculus/ui/calculus_window.py:177
+#: calculus/ui/calculus_window.py:177
 msgid "Expressions must be univariable"
 msgstr "Le espressioni devono essere univariabili"
 
-#: .././calculus/ui/calculus_window.py:180
+#: calculus/ui/calculus_window.py:180
 msgid "No input data"
 msgstr "Nessun dato di input"
 
-#: .././calculus/ui/calculus_window.py:235
-msgid "Displaying result error"
-msgstr "Visualizzazione errore risultato"
-
-#: .././calculus/ui/dialogs/about_dialog.py:9
-msgid "Usability and testing by"
-msgstr "Usabilità e test di"
-
-#: .././calculus/ui/plot_window.py:49
-msgid "The interval must be numeric"
-msgstr "L'intervallo deve essere numerico"
-
-#: .././calculus/ui/plot_window.py:59
-msgid "Original Expression and Result"
-msgstr "Espressione Originale e Risultato"
-
-#: .././calculus/ui/plot_window.py:62
-msgid "Original"
-msgstr "Originale"
-
-#: .././calculus/ui/plot_window.py:62 .././data/ui/calculus_window.ui.h:1
-#: .././data/ui/menu.ui.h:1
-msgid "Result"
-msgstr "Resultato"
-
-#: .././data/ui/calculus_window.ui.h:2
-msgid "Operation variable"
-msgstr "Variabile di operazione"
-
-#: .././data/ui/calculus_window.ui.h:3
-msgid "Differentiate"
-msgstr "Differenziare"
-
-#: .././data/ui/calculus_window.ui.h:4
-msgid "Integrate"
-msgstr "Integrare"
-
-#: .././data/ui/calculus_window.ui.h:5
-msgid "Operate"
-msgstr "Operar"
-
-#: .././data/ui/calculus_window.ui.h:6 .././data/ui/plot_window.ui.h:7
-msgid "Plot"
-msgstr "Traccia"
-
-#: .././data/ui/calculus_window.ui.h:7
-msgid "Differential and Integral Calculator"
-msgstr "Calcolatrice differenziale e integrale"
-
-#: .././data/ui/dialogs/warning_dialog.ui.h:1
-msgid "Warning"
-msgstr "Avviso"
-
-#: .././data/ui/menu.ui.h:2
-msgid "Open result in separate window"
-msgstr "Apri il risultato in una finestra separata"
-
-#: .././data/ui/menu.ui.h:3
-msgid "Copy LaTeX code"
-msgstr "Copia il codice LaTeX"
-
-#: .././data/ui/menu.ui.h:4
+#: calculus/ui/calculus_window.py:212 data/ui/menu.ui:16
 msgid "Export result as PNG"
 msgstr "Esporta risultato in formato PNG"
 
-#: .././data/ui/menu.ui.h:5
+#: calculus/ui/calculus_window.py:223
+#, fuzzy
+msgid "result.png"
+msgstr "Resultato"
+
+#: calculus/ui/calculus_window.py:235
+msgid "Displaying result error"
+msgstr "Visualizzazione errore risultato"
+
+#: calculus/ui/dialogs/about_dialog.py:9
+msgid "Usability and testing by"
+msgstr "Usabilità e test di"
+
+#: calculus/ui/plot_window.py:49
+msgid "The interval must be numeric"
+msgstr "L'intervallo deve essere numerico"
+
+#: calculus/ui/plot_window.py:59
+msgid "Original Expression and Result"
+msgstr "Espressione Originale e Risultato"
+
+#: calculus/ui/plot_window.py:62
+msgid "Original"
+msgstr "Originale"
+
+#: calculus/ui/plot_window.py:62 data/ui/calculus_window.ui:26
+#: data/ui/menu.ui:4
+msgid "Result"
+msgstr "Resultato"
+
+#: data/ui/calculus_window.ui:94
+msgid "Operation variable"
+msgstr "Variabile di operazione"
+
+#: data/ui/calculus_window.ui:145
+msgid "Differentiate"
+msgstr "Differenziare"
+
+#: data/ui/calculus_window.ui:160
+msgid "Integrate"
+msgstr "Integrare"
+
+#: data/ui/calculus_window.ui:187
+msgid "Operate"
+msgstr "Operar"
+
+#: data/ui/calculus_window.ui:215 data/ui/plot_window.ui:119
+msgid "Plot"
+msgstr "Traccia"
+
+#: data/ui/calculus_window.ui:240
+msgid "Differential and Integral Calculator"
+msgstr "Calcolatrice differenziale e integrale"
+
+#: data/ui/dialogs/warning_dialog.ui:7
+msgid "Warning"
+msgstr "Avviso"
+
+#: data/ui/menu.ui:6
+msgid "Open result in separate window"
+msgstr "Apri il risultato in una finestra separata"
+
+#: data/ui/menu.ui:11
+msgid "Copy LaTeX code"
+msgstr "Copia il codice LaTeX"
+
+#: data/ui/menu.ui:22 data/ui/menu.ui:24
 msgid "About"
 msgstr "Informazioni"
 
-#: .././data/ui/plot_window.ui.h:1
+#: data/ui/plot_window.ui:6
 msgid "Graphics"
 msgstr "Grafica"
 
-#: .././data/ui/plot_window.ui.h:2
+#: data/ui/plot_window.ui:23
 msgid "Inferior limit"
 msgstr "Limite inferiore"
 
-#: .././data/ui/plot_window.ui.h:3
+#: data/ui/plot_window.ui:44
 msgid "Superior limit"
 msgstr "Limite superiore"
 
-#: .././data/ui/plot_window.ui.h:4
+#: data/ui/plot_window.ui:65
 msgid "Color 1"
 msgstr "Colore 1"
 
-#: .././data/ui/plot_window.ui.h:5
+#: data/ui/plot_window.ui:87
 msgid "Color 2"
 msgstr "Colore 2"
 
-#: .././data/ui/plot_window.ui.h:6
+#: data/ui/plot_window.ui:108
 msgid "Cancel"
 msgstr "Cancella"
 
-#: .././data/ui/dialogs/about_dialog.ui.in.h:1
+#: data/ui/dialogs/about_dialog.ui.in:11
+#, fuzzy
 msgid ""
 "\n"
 "Solve simple calculus exercises involving differentiation and integration!\n"
-"Made with GTK, SymPy, Matplotlib and NumPy.\n"
+"Made with GTK, SymPy, Matplotlib and NumPy."
 msgstr ""
-"Risolvi semplici esercizi di calcolo che coinvolgono differenziazione e integrazione!\n"
+"Risolvi semplici esercizi di calcolo che coinvolgono differenziazione e "
+"integrazione!\n"
 "Realizzato con GTK, SymPy, Matplotlib e NumPy.\n"
 
-#: .././data/ui/dialogs/about_dialog.ui.in.h:5
+#: data/ui/dialogs/about_dialog.ui.in:15
 msgid "Calculus Website"
 msgstr "Sito Web di Calculus"
+
+#: data/com.github.carlos157oliveira.Calculus.desktop.in.in:3
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:14
+#, fuzzy
+msgid "Calculus"
+msgstr "Sito Web di Calculus"
+
+#: data/com.github.carlos157oliveira.Calculus.desktop.in.in:4
+msgid "Compute derivatives and integrals, besides plotting them"
+msgstr ""
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:15
+msgid "Compute derivatives and integrals"
+msgstr ""
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:17
+msgid "A practical tool to foresee the result of calculus exercises."
+msgstr ""
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:19
+msgid "Compute derivatives"
+msgstr ""
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:20
+msgid "Compute integrals"
+msgstr ""
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:21
+#, fuzzy
+msgid "Plot the original expression and result within a given range"
+msgstr "Espressione Originale e Risultato"
+
+#: data/com.github.carlos157oliveira.Calculus.appdata.xml.in.in:23
+msgid ""
+"If you are interested, open an issue in github to update a translation or "
+"make a pull request."
+msgstr ""
