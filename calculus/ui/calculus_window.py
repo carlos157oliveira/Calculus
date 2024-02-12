@@ -119,18 +119,18 @@ class CalculusWindow(Gtk.ApplicationWindow):
         operandText = self.operandEntry.get_text()
 
         if operandText == '':
-            conn.send(Result(True, _('Input operand')))
+            conn.send(Result(True, _("Input operand")))
             return
 
         if variableText == '':
-            conn.send(Result(True, _('Input operation variable')))
+            conn.send(Result(True, _("Input operation variable")))
             return
 
         try:
             self.sympy_handler.set_variable_from_text(variableText)
             self.sympy_handler.set_operand_from_text(operandText)
         except Exception:
-            conn.send(Result(True, _('Syntax error')))
+            conn.send(Result(True, _("Syntax error")))
             return
 
         if(self.togDiff.get_active()):
@@ -143,7 +143,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
         try:
             result_data = Plots.get_buffer_with_text(txt, self.resultColor)
         except ValueError:
-            conn.send(Result(True, _('Matplotlib is unable to render the output.\nYou can still export the output as LaTeX in the menu.'), self.sympy_handler))
+            conn.send(Result(True, _("Matplotlib is unable to render the output.\nYou can still export the output as LaTeX in the menu."), self.sympy_handler))
             return
 
         conn.send(Result(False, result_data, self.sympy_handler))
@@ -166,7 +166,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
                     f(np.array([0]))
                     g(np.array([0]))
                 except NameError:
-                    self.warning_dialog.show(_('One or more symbols aren\'t defined'))
+                    self.warning_dialog.show(_("One or more symbols aren't defined"))
                     return
                 except ZeroDivisionError:
                     pass
@@ -174,10 +174,10 @@ class CalculusWindow(Gtk.ApplicationWindow):
                 plot_window = PlotWindow(f1=f, f2=g)
                 plot_window.present()
             else:
-                self.warning_dialog.show(_('Expressions must be univariable'))
+                self.warning_dialog.show(_("Expressions must be univariable"))
 
         else:
-            self.warning_dialog.show(_('No input data'))
+            self.warning_dialog.show(_("No input data"))
 
 
     def _get_formatted_result(self):
@@ -195,7 +195,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
         try:
             Plots.open_result_in_external_viewer(txt)
         except ValueError:
-            self.warning_dialog.show(_('Matplotlib is unable to render the output.\nYou can still export the output as LaTeX in the menu.'))
+            self.warning_dialog.show(_("Matplotlib is unable to render the output.\nYou can still export the output as LaTeX in the menu."))
 
 
     def _copy_result_latex_code(self, action, param, user_data):
@@ -209,7 +209,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
             return
 
         file_chooser = Gtk.FileChooserDialog(
-            title="Export result as PNG",
+            title=_("Export result as PNG"),
             parent=self,
             action=Gtk.FileChooserAction.SAVE,
             do_overwrite_confirmation=True,
@@ -220,7 +220,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
                 Gtk.ResponseType.ACCEPT
             )
         )
-        file_chooser.set_current_name('result.png')
+        file_chooser.set_current_name(_("result.png"))
         response = file_chooser.run()
 
         try:
@@ -232,7 +232,7 @@ class CalculusWindow(Gtk.ApplicationWindow):
                 Plots.save_file_with_result(self._get_formatted_result(), filename)
 
         except ValueError:
-            GLib.idle_add(self.warning_dialog.show, _('Displaying result error'))
+            GLib.idle_add(self.warning_dialog.show, _("Displaying result error"))
         finally:
             file_chooser.destroy()
 
