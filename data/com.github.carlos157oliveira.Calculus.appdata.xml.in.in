@@ -34,6 +34,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.5.3" date="2024-02-12">
+      <description translatable="no">
+        <p>Translation:</p>
+        <ul>
+          <li>Added Turkish translation.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.5.2" date="2022-02-18">
       <description translatable="no">
         <p>Translation:</p>
