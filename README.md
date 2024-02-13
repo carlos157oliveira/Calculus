@@ -13,3 +13,13 @@ It should be simple with gnome builder which automates the flatpak generation. A
 - Also see some graphs of the input and output expressions with some basic customization like:
   - Define the ranges
   - Alter the individual color of the lines of the subplots
+
+## Translation commands
+
+To generate the translation template (**Calculus.pot**), the following command can be useful:
+
+```
+xgettext -f po/POTFILES.in -o po/Calculus.pot
+```
+
+When updating, **msgmerge** may be helpful.
