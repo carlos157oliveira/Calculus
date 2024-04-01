@@ -6,7 +6,7 @@
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1" />
-  <developer_name translatable="no">Carlos</developer_name>
+  <developer_name translate="no">Carlos</developer_name>
   <url type="homepage">@package_url@</url>
   <url type="bugtracker">@package_url_bug@</url>
   <url type="vcs-browser">https://github.com/carlos157oliveira/Calculus</url>
@@ -35,7 +35,7 @@
   </screenshots>
   <releases>
     <release version="1.5.3" date="2024-02-12">
-      <description translatable="no">
+      <description translate="no">
         <p>Translation:</p>
         <ul>
           <li>Added Turkish translation.</li>
@@ -43,7 +43,7 @@
       </description>
     </release>
     <release version="1.5.2" date="2022-02-18">
-      <description translatable="no">
+      <description translate="no">
         <p>Translation:</p>
         <ul>
           <li>Updated italian translation.</li>
@@ -51,7 +51,7 @@
       </description>
     </release>
     <release version="1.5.1" date="2020-12-08">
-      <description translatable="no">
+      <description translate="no">
         <p>New feature:</p>
         <ul>
           <li>Added About dialog.</li>
@@ -59,7 +59,7 @@
       </description>
     </release>
     <release version="1.5.0" date="2020-11-29">
-      <description translatable="no">
+      <description translate="no">
         <p>New feature:</p>
         <ul>
           <li>Export result as PNG;</li>
@@ -67,7 +67,7 @@
       </description>
     </release>
     <release version="1.4.1" date="2020-11-28">
-      <description translatable="no">
+      <description translate="no">
         <p>New features:</p>
         <ul>
           <li>Open result in separate window;</li>
@@ -77,7 +77,7 @@
       </description>
     </release>
     <release version="1.4.0" date="2020-11-28">
-      <description translatable="no">
+      <description translate="no">
         <p>New features:</p>
         <ul>
           <li>Open result in separate window;</li>
@@ -87,21 +87,21 @@
       </description>
     </release>
     <release version="1.3.6" date="2020-11-22">
-      <description translatable="no">
+      <description translate="no">
         <p>
           Bug fix: added permission to home folder (now plots can be saved to filesystem).
         </p>
       </description>
     </release>
     <release version="1.3.5" date="2020-11-20">
-      <description translatable="no">
+      <description translate="no">
         <p>
           Bug fix: correction factor to the result size.
         </p>
       </description>
     </release>
     <release version="1.3.4" date="2020-11-20">
-      <description translatable="no">
+      <description translate="no">
         <p>
           Fixed some bugs:
         </p>
@@ -112,21 +112,21 @@
       </description>
     </release>
     <release version="1.3.3" date="2020-10-31">
-      <description translatable="no">
+      <description translate="no">
         <p>
           Fixed some bugs and added slovakian translation.
         </p>
       </description>
     </release>
     <release version="1.3.2" date="2020-10-25">
-      <description translatable="no">
+      <description translate="no">
         <p>
           Fixed some bugs and website now points to new project documentation page.
         </p>
       </description>
     </release>
     <release version="1.3.1" date="2020-10-11">
-      <description translatable="no">
+      <description translate="no">
         <p>
           Added some translations.
         </p>
